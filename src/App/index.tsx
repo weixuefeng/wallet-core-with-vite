@@ -4,10 +4,13 @@ import { initWasm } from '@trustwallet/wallet-core'
 export default function App() {
 
   async function generate() {
-    const {HDWallet, CoinType} = await initWasm();
-     const wallet = HDWallet.create(128, "");
-     var tiaAddress = wallet.getAddressForCoin(CoinType.tia);
-     console.log(`celestia :${tiaAddress}`);
+    const {HDWallet, CoinType, HexCoding, Curve, PrivateKey, AnyAddress} = await initWasm();
+    var hd = HDWallet.createWithMnemonic("mirror fiber cover curve media identify version balance panther world brother milk", "")
+    //  const wallet = HDWallet.create(128, "");
+     var tiaAddress = hd.getAddressForCoin(CoinType.sui);
+     console.log("tia: ",tiaAddress)
+     var valid = AnyAddress.isValid(tiaAddress, CoinType.sui)
+     console.log(`sui :${valid}`);
   }
 
   return (

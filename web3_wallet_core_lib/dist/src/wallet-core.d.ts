@@ -1,8 +1,6 @@
-// Copyright © 2017-2023 Trust Wallet.
+// SPDX-License-Identifier: Apache-2.0
 //
-// This file is part of Trust. The full Trust copyright notice, including
-// terms governing use, modification, and redistribution, is contained in the
-// file LICENSE at the root of the source code distribution tree.
+// Copyright © 2017 Trust Wallet.
 //
 // This is a GENERATED FILE, changes made here WILL BE LOST.
 //
@@ -11,11 +9,9 @@ export class AnySigner {
     static plan(data: Uint8Array | Buffer, coin: CoinType): Uint8Array;
     static supportsJSON(coin: CoinType): boolean;
 }
-// Copyright © 2017-2023 Trust Wallet.
+// SPDX-License-Identifier: Apache-2.0
 //
-// This file is part of Trust. The full Trust copyright notice, including
-// terms governing use, modification, and redistribution, is contained in the
-// file LICENSE at the root of the source code distribution tree.
+// Copyright © 2017 Trust Wallet.
 
 export class BitcoinSigHashTypeExt {
     static isSingle(type: BitcoinSigHashType): boolean;
@@ -73,7 +69,6 @@ export class StarkWare {
     static getStarkKeyFromSignature(derivationPath: DerivationPath, signature: string): PrivateKey;
 }
 export class TransactionCompiler {
-    static buildInput(coinType: CoinType, from: string, to: string, amount: string, asset: string, memo: string, chainId: string): Uint8Array;
     static preImageHashes(coinType: CoinType, txInputData: Uint8Array | Buffer): Uint8Array;
     static compileWithSignatures(coinType: CoinType, txInputData: Uint8Array | Buffer, signatures: DataVector, publicKeys: DataVector): Uint8Array;
     static compileWithSignaturesAndPubKeyType(coinType: CoinType, txInputData: Uint8Array | Buffer, signatures: DataVector, publicKeys: DataVector, pubKeyType: PublicKeyType): Uint8Array;
@@ -152,6 +147,11 @@ export class StellarVersionByte {
     static seed: StellarVersionByte;
     static preAuthTX: StellarVersionByte;
     static sha256Hash: StellarVersionByte;
+}
+export class FiroAddressType {
+    value: number;
+    static default: FiroAddressType;
+    static exchange: FiroAddressType;
 }
 export class FIOAccount {
     static createWithString(string: string): FIOAccount;
@@ -270,6 +270,7 @@ export class AnyAddress {
     static createBech32WithPublicKey(publicKey: PublicKey, coin: CoinType, hrp: string): AnyAddress;
     static createSS58WithPublicKey(publicKey: PublicKey, coin: CoinType, ss58Prefix: number): AnyAddress;
     static createWithPublicKeyFilecoinAddressType(publicKey: PublicKey, filecoinAddressType: FilecoinAddressType): AnyAddress;
+    static createWithPublicKeyFiroAddressType(publicKey: PublicKey, firoAddressType: FiroAddressType): AnyAddress;
     description(): string;
     coin(): CoinType;
     data(): Uint8Array;
@@ -356,6 +357,9 @@ export class Blockchain {
     static sui: Blockchain;
     static greenfield: Blockchain;
     static internetComputer: Blockchain;
+    static nativeEvmos: Blockchain;
+    static nativeInjective: Blockchain;
+    static avail: Blockchain;
 }
 export class WebAuthn {
     static getPublicKey(attestationObject: Uint8Array | Buffer): PublicKey;
@@ -385,7 +389,9 @@ export class HDWallet {
     static getPublicKeyFromExtended(extended: string, coin: CoinType, derivationPath: string): PublicKey;
     static getPrivateKeyFromExtended(extended: string, coin: CoinType, derivationPath: string): PrivateKey;
     static getPrivateKeyByChainCode(chainCode: string, key: string, coin: CoinType, derivationPath: string): PrivateKey;
+    static getPrivateKeyByChainCodeCardano(key: string, ext: string, chainCode: string, coin: CoinType, derivationPath: string): PrivateKey;
     static getHDNode(mnemonic: string, coin: CoinType, derivationPath: string): string;
+    static getHDNodeCardano(mnemonic: string, coin: CoinType, derivationPath: string): string;
     static create(strength: number, passphrase: string): HDWallet;
     static createWithMnemonic(mnemonic: string, passphrase: string): HDWallet;
     static createWithMnemonicCheck(mnemonic: string, passphrase: string, check: boolean): HDWallet;
@@ -409,6 +415,9 @@ export class HDWallet {
     getExtendedPublicKeyDerivation(purpose: Purpose, coin: CoinType, derivation: Derivation, version: HDVersion): string;
     delete(): void;
 }
+export class WalletConnectRequest {
+    static parse(coin: CoinType, input: Uint8Array | Buffer): Uint8Array;
+}
 export class FilecoinAddressConverter {
     static convertToEthereum(filecoinAddress: string): string;
     static convertFromEthereum(ethAddress: string): string;
@@ -425,6 +434,9 @@ export class StoredKeyEncryptionLevel {
     static minimal: StoredKeyEncryptionLevel;
     static weak: StoredKeyEncryptionLevel;
     static standard: StoredKeyEncryptionLevel;
+}
+export class SolanaTransaction {
+    static updateBlockhashAndSign(encodedTx: string, recentBlockhash: string, privateKeys: DataVector): Uint8Array;
 }
 export class SS58AddressType {
     value: number;
@@ -500,7 +512,7 @@ export class CoinType {
     static theta: CoinType;
     static thunderCore: CoinType;
     static neo: CoinType;
-    static tomoChain: CoinType;
+    static viction: CoinType;
     static tron: CoinType;
     static veChain: CoinType;
     static viacoin: CoinType;
@@ -607,8 +619,18 @@ export class CoinType {
     static zenEON: CoinType;
     static internetComputer: CoinType;
     static tia: CoinType;
+    static mantaPacific: CoinType;
+    static nativeZetaChain: CoinType;
+    static zetaEVM: CoinType;
+    static dydx: CoinType;
+    static merlin: CoinType;
+    static lightlink: CoinType;
+    static blast: CoinType;
+    static bounceBit: CoinType;
     static gateChain: CoinType;
     static vara: CoinType;
+    static avail: CoinType;
+    static nibiru: CoinType;
 }
 export class StoredKey {
     static load(path: string): StoredKey;
@@ -648,23 +670,28 @@ export class EthereumChainID {
     static ethereum: EthereumChainID;
     static classic: EthereumChainID;
     static rootstock: EthereumChainID;
+    static manta: EthereumChainID;
     static poa: EthereumChainID;
     static opbnb: EthereumChainID;
     static tfuelevm: EthereumChainID;
     static vechain: EthereumChainID;
     static callisto: EthereumChainID;
-    static tomochain: EthereumChainID;
+    static viction: EthereumChainID;
     static polygon: EthereumChainID;
     static okc: EthereumChainID;
     static thundertoken: EthereumChainID;
     static cfxevm: EthereumChainID;
+    static lightlink: EthereumChainID;
+    static merlin: EthereumChainID;
     static mantle: EthereumChainID;
+    static bouncebit: EthereumChainID;
     static gochain: EthereumChainID;
     static zeneon: EthereumChainID;
     static base: EthereumChainID;
     static meter: EthereumChainID;
     static celo: EthereumChainID;
     static linea: EthereumChainID;
+    static blast: EthereumChainID;
     static scroll: EthereumChainID;
     static wanchain: EthereumChainID;
     static cronos: EthereumChainID;
@@ -691,6 +718,7 @@ export class EthereumChainID {
     static arbitrumnova: EthereumChainID;
     static arbitrum: EthereumChainID;
     static smartchain: EthereumChainID;
+    static zetaevm: EthereumChainID;
     static neon: EthereumChainID;
     static aurora: EthereumChainID;
 }
@@ -701,6 +729,9 @@ export class CoinTypeConfiguration {
     static getAccountURL(type: CoinType, accountID: string): string;
     static getID(type: CoinType): string;
     static getName(type: CoinType): string;
+}
+export class TransactionDecoder {
+    static decode(coinType: CoinType, encodedTx: Uint8Array | Buffer): Uint8Array;
 }
 export class Ethereum {
     static eip2645GetPath(ethAddress: string, layer: string, application: string, index: string): string;
@@ -870,6 +901,7 @@ export class HRP {
     static osmosis: HRP;
     static terraV2: HRP;
     static coreum: HRP;
+    static nativeZetaChain: HRP;
     static nativeCanto: HRP;
     static sommelier: HRP;
     static fetchAI: HRP;
@@ -883,6 +915,8 @@ export class HRP {
     static stargaze: HRP;
     static nativeEvmos: HRP;
     static tia: HRP;
+    static dydx: HRP;
+    static nibiru: HRP;
     static juno: HRP;
     static tbinance: HRP;
     static stride: HRP;
@@ -899,6 +933,8 @@ export class Barz {
     static getCounterfactualAddress(input: Uint8Array | Buffer): string;
     static getInitCode(factory: string, publicKey: PublicKey, verificationFacet: string, salt: number): Uint8Array;
     static getFormattedSignature(signature: Uint8Array | Buffer, challenge: Uint8Array | Buffer, authenticatorData: Uint8Array | Buffer, clientDataJSON: string): Uint8Array;
+    static getPrefixedMsgHash(msgHash: Uint8Array | Buffer, barzAddress: string, chainId: number): Uint8Array;
+    static getDiamondCutCode(input: Uint8Array | Buffer): Uint8Array;
 }
 export class DerivationPathIndex {
     static create(value: number, hardened: boolean): DerivationPathIndex;
@@ -976,6 +1012,7 @@ export interface WalletCore {
     Cardano: typeof Cardano;
     EthereumAbiFunction: typeof EthereumAbiFunction;
     StellarVersionByte: typeof StellarVersionByte;
+    FiroAddressType: typeof FiroAddressType;
     FIOAccount: typeof FIOAccount;
     FilecoinAddressType: typeof FilecoinAddressType;
     BitcoinAddress: typeof BitcoinAddress;
@@ -995,9 +1032,11 @@ export interface WalletCore {
     BitcoinSigHashType: typeof BitcoinSigHashType;
     SegwitAddress: typeof SegwitAddress;
     HDWallet: typeof HDWallet;
+    WalletConnectRequest: typeof WalletConnectRequest;
     FilecoinAddressConverter: typeof FilecoinAddressConverter;
     TezosMessageSigner: typeof TezosMessageSigner;
     StoredKeyEncryptionLevel: typeof StoredKeyEncryptionLevel;
+    SolanaTransaction: typeof SolanaTransaction;
     SS58AddressType: typeof SS58AddressType;
     BitcoinFee: typeof BitcoinFee;
     StellarPassphrase: typeof StellarPassphrase;
@@ -1007,6 +1046,7 @@ export interface WalletCore {
     StoredKey: typeof StoredKey;
     EthereumChainID: typeof EthereumChainID;
     CoinTypeConfiguration: typeof CoinTypeConfiguration;
+    TransactionDecoder: typeof TransactionDecoder;
     Ethereum: typeof Ethereum;
     THORChainSwap: typeof THORChainSwap;
     PrivateKey: typeof PrivateKey;

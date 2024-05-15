@@ -1,4 +1,5 @@
 import * as $protobuf from "protobufjs";
+import Long = require("long");
 /** Namespace TW. */
 export namespace TW {
 
@@ -121,6 +122,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -200,6 +208,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -323,6 +338,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -414,6 +436,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -450,7 +479,8 @@ export namespace TW {
                 Error_signatures_count = 21,
                 Error_invalid_params = 22,
                 Error_invalid_requested_token_amount = 23,
-                Error_not_supported = 24
+                Error_not_supported = 24,
+                Error_dust_amount_requested = 25
             }
         }
     }
@@ -538,6 +568,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Transfer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an AssetTransfer. */
@@ -623,6 +660,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for AssetTransfer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an AssetOptIn. */
@@ -696,6 +740,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for AssetOptIn
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -832,6 +883,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -923,6 +981,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -1010,6 +1075,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransferMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a StructTag. */
@@ -1095,6 +1167,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for StructTag
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TokenTransferMessage. */
@@ -1180,6 +1259,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TokenTransferMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TokenTransferCoinsMessage. */
@@ -1265,6 +1351,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TokenTransferCoinsMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ManagedTokensRegisterMessage. */
@@ -1338,6 +1431,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ManagedTokensRegisterMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a CreateAccountMessage. */
@@ -1411,6 +1511,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CreateAccountMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an OfferNftMessage. */
@@ -1514,6 +1621,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OfferNftMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a CancelOfferNftMessage. */
@@ -1611,6 +1725,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CancelOfferNftMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ClaimNftMessage. */
@@ -1708,6 +1829,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ClaimNftMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TortugaClaim. */
@@ -1781,6 +1909,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TortugaClaim
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TortugaStake. */
@@ -1854,6 +1989,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TortugaStake
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TortugaUnstake. */
@@ -1927,6 +2069,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TortugaUnstake
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a LiquidStaking. */
@@ -2021,6 +2170,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for LiquidStaking
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a NftMessage. */
@@ -2109,6 +2265,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for NftMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -2269,6 +2432,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransactionAuthenticator. */
@@ -2348,6 +2518,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionAuthenticator
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -2451,6 +2628,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -2580,6 +2764,204 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ContractAddressInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** FacetCutAction enum. */
+            enum FacetCutAction {
+                ADD = 0,
+                REPLACE = 1,
+                REMOVE = 2
+            }
+
+            /** Properties of a FacetCut. */
+            interface IFacetCut {
+
+                /** FacetCut facetAddress */
+                facetAddress?: (string|null);
+
+                /** FacetCut action */
+                action?: (TW.Barz.Proto.FacetCutAction|null);
+
+                /** FacetCut functionSelectors */
+                functionSelectors?: (Uint8Array[]|null);
+            }
+
+            /** Represents a FacetCut. */
+            class FacetCut implements IFacetCut {
+
+                /**
+                 * Constructs a new FacetCut.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Barz.Proto.IFacetCut);
+
+                /** FacetCut facetAddress. */
+                public facetAddress: string;
+
+                /** FacetCut action. */
+                public action: TW.Barz.Proto.FacetCutAction;
+
+                /** FacetCut functionSelectors. */
+                public functionSelectors: Uint8Array[];
+
+                /**
+                 * Creates a new FacetCut instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns FacetCut instance
+                 */
+                public static create(properties?: TW.Barz.Proto.IFacetCut): TW.Barz.Proto.FacetCut;
+
+                /**
+                 * Encodes the specified FacetCut message. Does not implicitly {@link TW.Barz.Proto.FacetCut.verify|verify} messages.
+                 * @param message FacetCut message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Barz.Proto.IFacetCut, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a FacetCut message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns FacetCut
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Barz.Proto.FacetCut;
+
+                /**
+                 * Verifies a FacetCut message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a FacetCut message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns FacetCut
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Barz.Proto.FacetCut;
+
+                /**
+                 * Creates a plain object from a FacetCut message. Also converts values to other types if specified.
+                 * @param message FacetCut
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Barz.Proto.FacetCut, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this FacetCut to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for FacetCut
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** Properties of a DiamondCutInput. */
+            interface IDiamondCutInput {
+
+                /** DiamondCutInput facetCuts */
+                facetCuts?: (TW.Barz.Proto.IFacetCut[]|null);
+
+                /** DiamondCutInput initAddress */
+                initAddress?: (string|null);
+
+                /** DiamondCutInput initData */
+                initData?: (Uint8Array|null);
+            }
+
+            /** Represents a DiamondCutInput. */
+            class DiamondCutInput implements IDiamondCutInput {
+
+                /**
+                 * Constructs a new DiamondCutInput.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Barz.Proto.IDiamondCutInput);
+
+                /** DiamondCutInput facetCuts. */
+                public facetCuts: TW.Barz.Proto.IFacetCut[];
+
+                /** DiamondCutInput initAddress. */
+                public initAddress: string;
+
+                /** DiamondCutInput initData. */
+                public initData: Uint8Array;
+
+                /**
+                 * Creates a new DiamondCutInput instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns DiamondCutInput instance
+                 */
+                public static create(properties?: TW.Barz.Proto.IDiamondCutInput): TW.Barz.Proto.DiamondCutInput;
+
+                /**
+                 * Encodes the specified DiamondCutInput message. Does not implicitly {@link TW.Barz.Proto.DiamondCutInput.verify|verify} messages.
+                 * @param message DiamondCutInput message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Barz.Proto.IDiamondCutInput, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a DiamondCutInput message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns DiamondCutInput
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Barz.Proto.DiamondCutInput;
+
+                /**
+                 * Verifies a DiamondCutInput message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a DiamondCutInput message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns DiamondCutInput
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Barz.Proto.DiamondCutInput;
+
+                /**
+                 * Creates a plain object from a DiamondCutInput message. Also converts values to other types if specified.
+                 * @param message DiamondCutInput
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Barz.Proto.DiamondCutInput, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this DiamondCutInput to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DiamondCutInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -2685,6 +3067,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Transaction
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Signature. */
@@ -2776,6 +3165,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Signature
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TradeOrder. */
@@ -2891,6 +3287,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TradeOrder
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a CancelTradeOrder. */
@@ -2976,6 +3379,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CancelTradeOrder
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SendOrder. */
@@ -3055,6 +3465,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SendOrder
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace SendOrder {
@@ -3136,6 +3553,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Token
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an Input. */
@@ -3215,6 +3639,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Input
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an Output. */
@@ -3294,6 +3725,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Output
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
 
@@ -3392,6 +3830,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TokenIssueOrder
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TokenMintOrder. */
@@ -3477,6 +3922,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TokenMintOrder
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TokenBurnOrder. */
@@ -3562,6 +4014,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TokenBurnOrder
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TokenFreezeOrder. */
@@ -3647,6 +4106,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TokenFreezeOrder
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TokenUnfreezeOrder. */
@@ -3732,6 +4198,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TokenUnfreezeOrder
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a HTLTOrder. */
@@ -3859,6 +4332,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for HTLTOrder
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a DepositHTLTOrder. */
@@ -3944,6 +4424,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DepositHTLTOrder
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ClaimHTLOrder. */
@@ -4029,6 +4516,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ClaimHTLOrder
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a RefundHTLTOrder. */
@@ -4108,6 +4602,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for RefundHTLTOrder
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransferOut. */
@@ -4199,6 +4700,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransferOut
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SideChainDelegate. */
@@ -4290,6 +4798,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SideChainDelegate
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SideChainRedelegate. */
@@ -4387,6 +4902,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SideChainRedelegate
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SideChainUndelegate. */
@@ -4478,6 +5000,117 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SideChainUndelegate
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** Properties of a SideChainStakeMigration. */
+            interface ISideChainStakeMigration {
+
+                /** SideChainStakeMigration validatorSrcAddr */
+                validatorSrcAddr?: (Uint8Array|null);
+
+                /** SideChainStakeMigration validatorDstAddr */
+                validatorDstAddr?: (Uint8Array|null);
+
+                /** SideChainStakeMigration delegatorAddr */
+                delegatorAddr?: (Uint8Array|null);
+
+                /** SideChainStakeMigration refundAddr */
+                refundAddr?: (Uint8Array|null);
+
+                /** SideChainStakeMigration amount */
+                amount?: (TW.Binance.Proto.SendOrder.IToken|null);
+            }
+
+            /** Represents a SideChainStakeMigration. */
+            class SideChainStakeMigration implements ISideChainStakeMigration {
+
+                /**
+                 * Constructs a new SideChainStakeMigration.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Binance.Proto.ISideChainStakeMigration);
+
+                /** SideChainStakeMigration validatorSrcAddr. */
+                public validatorSrcAddr: Uint8Array;
+
+                /** SideChainStakeMigration validatorDstAddr. */
+                public validatorDstAddr: Uint8Array;
+
+                /** SideChainStakeMigration delegatorAddr. */
+                public delegatorAddr: Uint8Array;
+
+                /** SideChainStakeMigration refundAddr. */
+                public refundAddr: Uint8Array;
+
+                /** SideChainStakeMigration amount. */
+                public amount?: (TW.Binance.Proto.SendOrder.IToken|null);
+
+                /**
+                 * Creates a new SideChainStakeMigration instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns SideChainStakeMigration instance
+                 */
+                public static create(properties?: TW.Binance.Proto.ISideChainStakeMigration): TW.Binance.Proto.SideChainStakeMigration;
+
+                /**
+                 * Encodes the specified SideChainStakeMigration message. Does not implicitly {@link TW.Binance.Proto.SideChainStakeMigration.verify|verify} messages.
+                 * @param message SideChainStakeMigration message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Binance.Proto.ISideChainStakeMigration, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a SideChainStakeMigration message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns SideChainStakeMigration
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Binance.Proto.SideChainStakeMigration;
+
+                /**
+                 * Verifies a SideChainStakeMigration message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a SideChainStakeMigration message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns SideChainStakeMigration
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Binance.Proto.SideChainStakeMigration;
+
+                /**
+                 * Creates a plain object from a SideChainStakeMigration message. Also converts values to other types if specified.
+                 * @param message SideChainStakeMigration
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Binance.Proto.SideChainStakeMigration, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this SideChainStakeMigration to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SideChainStakeMigration
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TimeLockOrder. */
@@ -4569,6 +5202,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TimeLockOrder
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TimeRelockOrder. */
@@ -4666,6 +5306,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TimeRelockOrder
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TimeUnlockOrder. */
@@ -4745,6 +5392,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TimeUnlockOrder
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -4824,6 +5478,9 @@ export namespace TW {
 
                 /** SigningInput timeUnlockOrder */
                 timeUnlockOrder?: (TW.Binance.Proto.ITimeUnlockOrder|null);
+
+                /** SigningInput sideStakeMigrationOrder */
+                sideStakeMigrationOrder?: (TW.Binance.Proto.ISideChainStakeMigration|null);
             }
 
             /** Represents a SigningInput. */
@@ -4910,8 +5567,11 @@ export namespace TW {
                 /** SigningInput timeUnlockOrder. */
                 public timeUnlockOrder?: (TW.Binance.Proto.ITimeUnlockOrder|null);
 
+                /** SigningInput sideStakeMigrationOrder. */
+                public sideStakeMigrationOrder?: (TW.Binance.Proto.ISideChainStakeMigration|null);
+
                 /** SigningInput orderOneof. */
-                public orderOneof?: ("tradeOrder"|"cancelTradeOrder"|"sendOrder"|"freezeOrder"|"unfreezeOrder"|"htltOrder"|"depositHTLTOrder"|"claimHTLTOrder"|"refundHTLTOrder"|"issueOrder"|"mintOrder"|"burnOrder"|"transferOutOrder"|"sideDelegateOrder"|"sideRedelegateOrder"|"sideUndelegateOrder"|"timeLockOrder"|"timeRelockOrder"|"timeUnlockOrder");
+                public orderOneof?: ("tradeOrder"|"cancelTradeOrder"|"sendOrder"|"freezeOrder"|"unfreezeOrder"|"htltOrder"|"depositHTLTOrder"|"claimHTLTOrder"|"refundHTLTOrder"|"issueOrder"|"mintOrder"|"burnOrder"|"transferOutOrder"|"sideDelegateOrder"|"sideRedelegateOrder"|"sideUndelegateOrder"|"timeLockOrder"|"timeRelockOrder"|"timeUnlockOrder"|"sideStakeMigrationOrder");
 
                 /**
                  * Creates a new SigningInput instance using the specified properties.
@@ -4965,6 +5625,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -4978,6 +5645,12 @@ export namespace TW {
 
                 /** SigningOutput errorMessage */
                 errorMessage?: (string|null);
+
+                /** SigningOutput signature */
+                signature?: (Uint8Array|null);
+
+                /** SigningOutput signatureJson */
+                signatureJson?: (string|null);
             }
 
             /** Represents a SigningOutput. */
@@ -4997,6 +5670,12 @@ export namespace TW {
 
                 /** SigningOutput errorMessage. */
                 public errorMessage: string;
+
+                /** SigningOutput signature. */
+                public signature: Uint8Array;
+
+                /** SigningOutput signatureJson. */
+                public signatureJson: string;
 
                 /**
                  * Creates a new SigningOutput instance using the specified properties.
@@ -5050,6 +5729,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -5149,6 +5835,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Transaction
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransactionInput. */
@@ -5234,6 +5927,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an OutPoint. */
@@ -5325,6 +6025,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OutPoint
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransactionOutput. */
@@ -5410,6 +6117,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an UnspentTransaction. */
@@ -5507,6 +6221,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for UnspentTransaction
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** TransactionVariant enum. */
@@ -5595,6 +6316,93 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OutputAddress
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** Properties of an OutputIndex. */
+            interface IOutputIndex {
+
+                /** OutputIndex index */
+                index?: (number|null);
+            }
+
+            /** Represents an OutputIndex. */
+            class OutputIndex implements IOutputIndex {
+
+                /**
+                 * Constructs a new OutputIndex.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Bitcoin.Proto.IOutputIndex);
+
+                /** OutputIndex index. */
+                public index: number;
+
+                /**
+                 * Creates a new OutputIndex instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns OutputIndex instance
+                 */
+                public static create(properties?: TW.Bitcoin.Proto.IOutputIndex): TW.Bitcoin.Proto.OutputIndex;
+
+                /**
+                 * Encodes the specified OutputIndex message. Does not implicitly {@link TW.Bitcoin.Proto.OutputIndex.verify|verify} messages.
+                 * @param message OutputIndex message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Bitcoin.Proto.IOutputIndex, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes an OutputIndex message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns OutputIndex
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Bitcoin.Proto.OutputIndex;
+
+                /**
+                 * Verifies an OutputIndex message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates an OutputIndex message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns OutputIndex
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Bitcoin.Proto.OutputIndex;
+
+                /**
+                 * Creates a plain object from an OutputIndex message. Also converts values to other types if specified.
+                 * @param message OutputIndex
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Bitcoin.Proto.OutputIndex, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this OutputIndex to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OutputIndex
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -5639,6 +6447,9 @@ export namespace TW {
                 /** SigningInput outputOpReturn */
                 outputOpReturn?: (Uint8Array|null);
 
+                /** SigningInput outputOpReturnIndex */
+                outputOpReturnIndex?: (TW.Bitcoin.Proto.IOutputIndex|null);
+
                 /** SigningInput extraOutputs */
                 extraOutputs?: (TW.Bitcoin.Proto.IOutputAddress[]|null);
 
@@ -5653,6 +6464,15 @@ export namespace TW {
 
                 /** SigningInput isItBrcOperation */
                 isItBrcOperation?: (boolean|null);
+
+                /** SigningInput planningV2 */
+                planningV2?: (TW.BitcoinV2.Proto.IComposePlan|null);
+
+                /** SigningInput signingV2 */
+                signingV2?: (TW.BitcoinV2.Proto.ISigningInput|null);
+
+                /** SigningInput fixedDustThreshold */
+                fixedDustThreshold?: (Long|null);
             }
 
             /** Represents a SigningInput. */
@@ -5703,6 +6523,9 @@ export namespace TW {
                 /** SigningInput outputOpReturn. */
                 public outputOpReturn: Uint8Array;
 
+                /** SigningInput outputOpReturnIndex. */
+                public outputOpReturnIndex?: (TW.Bitcoin.Proto.IOutputIndex|null);
+
                 /** SigningInput extraOutputs. */
                 public extraOutputs: TW.Bitcoin.Proto.IOutputAddress[];
 
@@ -5717,6 +6540,18 @@ export namespace TW {
 
                 /** SigningInput isItBrcOperation. */
                 public isItBrcOperation: boolean;
+
+                /** SigningInput planningV2. */
+                public planningV2?: (TW.BitcoinV2.Proto.IComposePlan|null);
+
+                /** SigningInput signingV2. */
+                public signingV2?: (TW.BitcoinV2.Proto.ISigningInput|null);
+
+                /** SigningInput fixedDustThreshold. */
+                public fixedDustThreshold?: (Long|null);
+
+                /** SigningInput dustPolicy. */
+                public dustPolicy?: "fixedDustThreshold";
 
                 /**
                  * Creates a new SigningInput instance using the specified properties.
@@ -5770,6 +6605,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransactionPlan. */
@@ -5799,11 +6641,17 @@ export namespace TW {
                 /** TransactionPlan outputOpReturn */
                 outputOpReturn?: (Uint8Array|null);
 
+                /** TransactionPlan outputOpReturnIndex */
+                outputOpReturnIndex?: (TW.Bitcoin.Proto.IOutputIndex|null);
+
                 /** TransactionPlan preblockhash */
                 preblockhash?: (Uint8Array|null);
 
                 /** TransactionPlan preblockheight */
                 preblockheight?: (Long|null);
+
+                /** TransactionPlan planningResultV2 */
+                planningResultV2?: (TW.BitcoinV2.Proto.ITransactionPlan|null);
             }
 
             /** Represents a TransactionPlan. */
@@ -5839,11 +6687,17 @@ export namespace TW {
                 /** TransactionPlan outputOpReturn. */
                 public outputOpReturn: Uint8Array;
 
+                /** TransactionPlan outputOpReturnIndex. */
+                public outputOpReturnIndex?: (TW.Bitcoin.Proto.IOutputIndex|null);
+
                 /** TransactionPlan preblockhash. */
                 public preblockhash: Uint8Array;
 
                 /** TransactionPlan preblockheight. */
                 public preblockheight: Long;
+
+                /** TransactionPlan planningResultV2. */
+                public planningResultV2?: (TW.BitcoinV2.Proto.ITransactionPlan|null);
 
                 /**
                  * Creates a new TransactionPlan instance using the specified properties.
@@ -5897,6 +6751,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionPlan
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -5916,6 +6777,9 @@ export namespace TW {
 
                 /** SigningOutput errorMessage */
                 errorMessage?: (string|null);
+
+                /** SigningOutput signingResultV2 */
+                signingResultV2?: (TW.BitcoinV2.Proto.ISigningOutput|null);
             }
 
             /** Represents a SigningOutput. */
@@ -5941,6 +6805,9 @@ export namespace TW {
 
                 /** SigningOutput errorMessage. */
                 public errorMessage: string;
+
+                /** SigningOutput signingResultV2. */
+                public signingResultV2?: (TW.BitcoinV2.Proto.ISigningOutput|null);
 
                 /**
                  * Creates a new SigningOutput instance using the specified properties.
@@ -5994,6 +6861,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a HashPublicKey. */
@@ -6073,6 +6947,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for HashPublicKey
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a PreSigningOutput. */
@@ -6158,6 +7039,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PreSigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -6179,6 +7067,7 @@ export namespace TW {
                 Error_utxo_missing_sighash_method = 7,
                 Error_utxo_failed_encoding = 8,
                 Error_utxo_insufficient_inputs = 9,
+                Error_utxo_no_outputs_specified = 43,
                 Error_utxo_missing_change_script_pubkey = 10,
                 Error_zero_sequence_not_enabled = 11,
                 Error_unmatched_input_signature_count = 12,
@@ -6340,6 +7229,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an Input. */
@@ -6464,6 +7360,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Input
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace Input {
@@ -6584,6 +7487,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for InputBuilder
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an InputScriptWitness. */
@@ -6675,6 +7585,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for InputScriptWitness
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an InputTaprootKeyPath. */
@@ -6754,6 +7671,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for InputTaprootKeyPath
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an InputTaprootScriptPath. */
@@ -6839,6 +7763,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for InputTaprootScriptPath
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an InputOrdinalInscription. */
@@ -6930,6 +7861,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for InputOrdinalInscription
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an InputBrc20Inscription. */
@@ -6945,7 +7883,7 @@ export namespace TW {
                     ticker?: (string|null);
 
                     /** InputBrc20Inscription transferAmount */
-                    transferAmount?: (Long|null);
+                    transferAmount?: (string|null);
                 }
 
                 /** Represents an InputBrc20Inscription. */
@@ -6967,7 +7905,7 @@ export namespace TW {
                     public ticker: string;
 
                     /** InputBrc20Inscription transferAmount. */
-                    public transferAmount: Long;
+                    public transferAmount: string;
 
                     /**
                      * Creates a new InputBrc20Inscription instance using the specified properties.
@@ -7021,6 +7959,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for InputBrc20Inscription
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
 
@@ -7116,6 +8061,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Output
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace Output {
@@ -7242,6 +8194,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for OutputBuilder
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an OutputRedeemScriptOrHash. */
@@ -7324,6 +8283,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for OutputRedeemScriptOrHash
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an OutputTaprootScriptPath. */
@@ -7403,6 +8369,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for OutputTaprootScriptPath
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an OutputOrdinalInscription. */
@@ -7488,6 +8461,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for OutputOrdinalInscription
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an OutputBrc20Inscription. */
@@ -7500,7 +8480,7 @@ export namespace TW {
                     ticker?: (string|null);
 
                     /** OutputBrc20Inscription transferAmount */
-                    transferAmount?: (Long|null);
+                    transferAmount?: (string|null);
                 }
 
                 /** Represents an OutputBrc20Inscription. */
@@ -7519,7 +8499,7 @@ export namespace TW {
                     public ticker: string;
 
                     /** OutputBrc20Inscription transferAmount. */
-                    public transferAmount: Long;
+                    public transferAmount: string;
 
                     /**
                      * Creates a new OutputBrc20Inscription instance using the specified properties.
@@ -7573,6 +8553,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for OutputBrc20Inscription
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
 
@@ -7656,6 +8643,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ToPublicKeyOrHash
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a PreSigningOutput. */
@@ -7771,6 +8765,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PreSigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace PreSigningOutput {
@@ -7864,6 +8865,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for TxOut
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
 
@@ -7974,6 +8982,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Transaction. */
@@ -8065,6 +9080,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Transaction
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransactionInput. */
@@ -8162,6 +9184,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransactionOutput. */
@@ -8253,6 +9282,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ComposePlan. */
@@ -8329,6 +9365,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ComposePlan
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace ComposePlan {
@@ -8446,6 +9489,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for ComposeBrc20Plan
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
 
@@ -8535,6 +9585,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionPlan
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace TransactionPlan {
@@ -8616,6 +9673,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Brc20Plan
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
         }
@@ -8638,7 +9702,8 @@ export namespace TW {
                 Error_missing_sighash_method = 6,
                 Error_failed_encoding = 7,
                 Error_insufficient_inputs = 8,
-                Error_missing_change_script_pubkey = 9
+                Error_no_outputs_specified = 9,
+                Error_missing_change_script_pubkey = 10
             }
 
             /** Properties of a SigningInput. */
@@ -8754,13 +9819,21 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** InputSelector enum. */
             enum InputSelector {
-                UseAll = 0,
+                SelectAscending = 0,
                 SelectInOrder = 1,
-                SelectAscending = 2
+                SelectDescending = 2,
+                UseAll = 10
             }
 
             /** Properties of a LockTime. */
@@ -8843,6 +9916,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for LockTime
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TxIn. */
@@ -8964,6 +10044,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TxIn
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** SigningMethod enum. */
@@ -9062,6 +10149,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TxOut
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a PreSigningOutput. */
@@ -9171,6 +10265,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PreSigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Sighash. */
@@ -9256,6 +10357,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Sighash
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a PreSerialization. */
@@ -9353,6 +10461,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PreSerialization
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TxInClaim. */
@@ -9363,6 +10478,9 @@ export namespace TW {
 
                 /** TxInClaim vout */
                 vout?: (number|null);
+
+                /** TxInClaim value */
+                value?: (Long|null);
 
                 /** TxInClaim sequence */
                 sequence?: (number|null);
@@ -9388,6 +10506,9 @@ export namespace TW {
 
                 /** TxInClaim vout. */
                 public vout: number;
+
+                /** TxInClaim value. */
+                public value: Long;
 
                 /** TxInClaim sequence. */
                 public sequence: number;
@@ -9450,6 +10571,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TxInClaim
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SerializedTransaction. */
@@ -9547,6 +10675,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SerializedTransaction
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -9634,6 +10769,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OutPoint
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TokenAmount. */
@@ -9725,6 +10867,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TokenAmount
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TxInput. */
@@ -9816,6 +10965,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TxInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TxOutput. */
@@ -9901,6 +11057,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TxOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TokenBundle. */
@@ -9974,6 +11137,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TokenBundle
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Transfer. */
@@ -10077,6 +11247,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Transfer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a RegisterStakingKey. */
@@ -10156,6 +11333,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for RegisterStakingKey
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a DeregisterStakingKey. */
@@ -10235,6 +11419,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DeregisterStakingKey
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Delegate. */
@@ -10320,6 +11511,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Delegate
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Withdraw. */
@@ -10399,6 +11597,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Withdraw
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransactionPlan. */
@@ -10538,6 +11743,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionPlan
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -10665,6 +11877,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -10756,6 +11975,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -10843,6 +12069,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Amount
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Fee. */
@@ -10922,6 +12155,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Fee
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an Height. */
@@ -11001,6 +12241,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Height
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** BroadcastMode enum. */
@@ -11099,6 +12346,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for THORChainAsset
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a THORChainCoin. */
@@ -11184,6 +12438,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for THORChainCoin
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Message. */
@@ -11218,9 +12479,6 @@ export namespace TW {
 
                 /** Message thorchainSendMessage */
                 thorchainSendMessage?: (TW.Cosmos.Proto.Message.ITHORChainSend|null);
-
-                /** Message executeContractMessage */
-                executeContractMessage?: (TW.Cosmos.Proto.Message.IExecuteContract|null);
 
                 /** Message wasmTerraExecuteContractGeneric */
                 wasmTerraExecuteContractGeneric?: (TW.Cosmos.Proto.Message.IWasmTerraExecuteContractGeneric|null);
@@ -11298,9 +12556,6 @@ export namespace TW {
                 /** Message thorchainSendMessage. */
                 public thorchainSendMessage?: (TW.Cosmos.Proto.Message.ITHORChainSend|null);
 
-                /** Message executeContractMessage. */
-                public executeContractMessage?: (TW.Cosmos.Proto.Message.IExecuteContract|null);
-
                 /** Message wasmTerraExecuteContractGeneric. */
                 public wasmTerraExecuteContractGeneric?: (TW.Cosmos.Proto.Message.IWasmTerraExecuteContractGeneric|null);
 
@@ -11338,7 +12593,7 @@ export namespace TW {
                 public thorchainDepositMessage?: (TW.Cosmos.Proto.Message.ITHORChainDeposit|null);
 
                 /** Message messageOneof. */
-                public messageOneof?: ("sendCoinsMessage"|"transferTokensMessage"|"stakeMessage"|"unstakeMessage"|"restakeMessage"|"withdrawStakeRewardMessage"|"rawJsonMessage"|"wasmTerraExecuteContractTransferMessage"|"wasmTerraExecuteContractSendMessage"|"thorchainSendMessage"|"executeContractMessage"|"wasmTerraExecuteContractGeneric"|"wasmExecuteContractTransferMessage"|"wasmExecuteContractSendMessage"|"wasmExecuteContractGeneric"|"signDirectMessage"|"authGrant"|"authRevoke"|"setWithdrawAddressMessage"|"msgVote"|"msgStrideLiquidStakingStake"|"msgStrideLiquidStakingRedeem"|"thorchainDepositMessage");
+                public messageOneof?: ("sendCoinsMessage"|"transferTokensMessage"|"stakeMessage"|"unstakeMessage"|"restakeMessage"|"withdrawStakeRewardMessage"|"rawJsonMessage"|"wasmTerraExecuteContractTransferMessage"|"wasmTerraExecuteContractSendMessage"|"thorchainSendMessage"|"wasmTerraExecuteContractGeneric"|"wasmExecuteContractTransferMessage"|"wasmExecuteContractSendMessage"|"wasmExecuteContractGeneric"|"signDirectMessage"|"authGrant"|"authRevoke"|"setWithdrawAddressMessage"|"msgVote"|"msgStrideLiquidStakingStake"|"msgStrideLiquidStakingRedeem"|"thorchainDepositMessage");
 
                 /**
                  * Creates a new Message instance using the specified properties.
@@ -11392,6 +12647,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Message
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace Message {
@@ -11485,6 +12747,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Send
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a Transfer. */
@@ -11594,6 +12863,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Transfer
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a Delegate. */
@@ -11685,6 +12961,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Delegate
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an Undelegate. */
@@ -11776,6 +13059,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Undelegate
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a BeginRedelegate. */
@@ -11873,6 +13163,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for BeginRedelegate
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a SetWithdrawAddress. */
@@ -11958,6 +13255,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for SetWithdrawAddress
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a WithdrawDelegationReward. */
@@ -12043,103 +13347,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
-                }
-
-                /** Properties of an ExecuteContract. */
-                interface IExecuteContract {
-
-                    /** ExecuteContract sender */
-                    sender?: (string|null);
-
-                    /** ExecuteContract contract */
-                    contract?: (string|null);
-
-                    /** ExecuteContract executeMsg */
-                    executeMsg?: (string|null);
-
-                    /** ExecuteContract coins */
-                    coins?: (TW.Cosmos.Proto.IAmount[]|null);
-
-                    /** ExecuteContract typePrefix */
-                    typePrefix?: (string|null);
-                }
-
-                /** Represents an ExecuteContract. */
-                class ExecuteContract implements IExecuteContract {
 
                     /**
-                     * Constructs a new ExecuteContract.
-                     * @param [properties] Properties to set
+                     * Gets the default type url for WithdrawDelegationReward
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
                      */
-                    constructor(properties?: TW.Cosmos.Proto.Message.IExecuteContract);
-
-                    /** ExecuteContract sender. */
-                    public sender: string;
-
-                    /** ExecuteContract contract. */
-                    public contract: string;
-
-                    /** ExecuteContract executeMsg. */
-                    public executeMsg: string;
-
-                    /** ExecuteContract coins. */
-                    public coins: TW.Cosmos.Proto.IAmount[];
-
-                    /** ExecuteContract typePrefix. */
-                    public typePrefix: string;
-
-                    /**
-                     * Creates a new ExecuteContract instance using the specified properties.
-                     * @param [properties] Properties to set
-                     * @returns ExecuteContract instance
-                     */
-                    public static create(properties?: TW.Cosmos.Proto.Message.IExecuteContract): TW.Cosmos.Proto.Message.ExecuteContract;
-
-                    /**
-                     * Encodes the specified ExecuteContract message. Does not implicitly {@link TW.Cosmos.Proto.Message.ExecuteContract.verify|verify} messages.
-                     * @param message ExecuteContract message or plain object to encode
-                     * @param [writer] Writer to encode to
-                     * @returns Writer
-                     */
-                    public static encode(message: TW.Cosmos.Proto.Message.IExecuteContract, writer?: $protobuf.Writer): $protobuf.Writer;
-
-                    /**
-                     * Decodes an ExecuteContract message from the specified reader or buffer.
-                     * @param reader Reader or buffer to decode from
-                     * @param [length] Message length if known beforehand
-                     * @returns ExecuteContract
-                     * @throws {Error} If the payload is not a reader or valid buffer
-                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
-                     */
-                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Cosmos.Proto.Message.ExecuteContract;
-
-                    /**
-                     * Verifies an ExecuteContract message.
-                     * @param message Plain object to verify
-                     * @returns `null` if valid, otherwise the reason why it is not
-                     */
-                    public static verify(message: { [k: string]: any }): (string|null);
-
-                    /**
-                     * Creates an ExecuteContract message from a plain object. Also converts values to their respective internal types.
-                     * @param object Plain object
-                     * @returns ExecuteContract
-                     */
-                    public static fromObject(object: { [k: string]: any }): TW.Cosmos.Proto.Message.ExecuteContract;
-
-                    /**
-                     * Creates a plain object from an ExecuteContract message. Also converts values to other types if specified.
-                     * @param message ExecuteContract
-                     * @param [options] Conversion options
-                     * @returns Plain object
-                     */
-                    public static toObject(message: TW.Cosmos.Proto.Message.ExecuteContract, options?: $protobuf.IConversionOptions): { [k: string]: any };
-
-                    /**
-                     * Converts this ExecuteContract to JSON.
-                     * @returns JSON object
-                     */
-                    public toJSON(): { [k: string]: any };
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a WasmTerraExecuteContractTransfer. */
@@ -12231,6 +13445,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for WasmTerraExecuteContractTransfer
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a WasmTerraExecuteContractSend. */
@@ -12334,6 +13555,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for WasmTerraExecuteContractSend
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a THORChainSend. */
@@ -12419,6 +13647,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for THORChainSend
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a THORChainDeposit. */
@@ -12504,6 +13739,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for THORChainDeposit
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a WasmTerraExecuteContractGeneric. */
@@ -12595,6 +13837,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for WasmTerraExecuteContractGeneric
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a WasmExecuteContractTransfer. */
@@ -12686,6 +13935,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for WasmExecuteContractTransfer
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a WasmExecuteContractSend. */
@@ -12789,6 +14045,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for WasmExecuteContractSend
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a WasmExecuteContractGeneric. */
@@ -12880,6 +14143,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for WasmExecuteContractGeneric
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a RawJSON. */
@@ -12959,6 +14229,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for RawJSON
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a SignDirect. */
@@ -13038,6 +14315,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for SignDirect
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a StakeAuthorization. */
@@ -13132,6 +14416,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for StakeAuthorization
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 namespace StakeAuthorization {
@@ -13207,6 +14498,13 @@ export namespace TW {
                          * @returns JSON object
                          */
                         public toJSON(): { [k: string]: any };
+
+                        /**
+                         * Gets the default type url for Validators
+                         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                         * @returns The default type url
+                         */
+                        public static getTypeUrl(typeUrlPrefix?: string): string;
                     }
                 }
 
@@ -13310,6 +14608,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for AuthGrant
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an AuthRevoke. */
@@ -13395,6 +14700,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for AuthRevoke
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** VoteOption enum. */
@@ -13489,6 +14801,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for MsgVote
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a MsgStrideLiquidStakingStake. */
@@ -13574,6 +14893,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for MsgStrideLiquidStakingStake
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a MsgStrideLiquidStakingRedeem. */
@@ -13665,6 +14991,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for MsgStrideLiquidStakingRedeem
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
 
@@ -13672,6 +15005,111 @@ export namespace TW {
             enum SigningMode {
                 JSON = 0,
                 Protobuf = 1
+            }
+
+            /** TxHasher enum. */
+            enum TxHasher {
+                UseDefault = 0,
+                Sha256 = 1,
+                Keccak256 = 2
+            }
+
+            /** SignerPublicKeyType enum. */
+            enum SignerPublicKeyType {
+                Secp256k1 = 0,
+                Secp256k1Extended = 1
+            }
+
+            /** Properties of a SignerInfo. */
+            interface ISignerInfo {
+
+                /** SignerInfo publicKeyType */
+                publicKeyType?: (TW.Cosmos.Proto.SignerPublicKeyType|null);
+
+                /** SignerInfo jsonType */
+                jsonType?: (string|null);
+
+                /** SignerInfo protobufType */
+                protobufType?: (string|null);
+            }
+
+            /** Represents a SignerInfo. */
+            class SignerInfo implements ISignerInfo {
+
+                /**
+                 * Constructs a new SignerInfo.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Cosmos.Proto.ISignerInfo);
+
+                /** SignerInfo publicKeyType. */
+                public publicKeyType: TW.Cosmos.Proto.SignerPublicKeyType;
+
+                /** SignerInfo jsonType. */
+                public jsonType: string;
+
+                /** SignerInfo protobufType. */
+                public protobufType: string;
+
+                /**
+                 * Creates a new SignerInfo instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns SignerInfo instance
+                 */
+                public static create(properties?: TW.Cosmos.Proto.ISignerInfo): TW.Cosmos.Proto.SignerInfo;
+
+                /**
+                 * Encodes the specified SignerInfo message. Does not implicitly {@link TW.Cosmos.Proto.SignerInfo.verify|verify} messages.
+                 * @param message SignerInfo message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Cosmos.Proto.ISignerInfo, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a SignerInfo message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns SignerInfo
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Cosmos.Proto.SignerInfo;
+
+                /**
+                 * Verifies a SignerInfo message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a SignerInfo message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns SignerInfo
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Cosmos.Proto.SignerInfo;
+
+                /**
+                 * Creates a plain object from a SignerInfo message. Also converts values to other types if specified.
+                 * @param message SignerInfo
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Cosmos.Proto.SignerInfo, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this SignerInfo to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SignerInfo
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -13706,6 +15144,15 @@ export namespace TW {
 
                 /** SigningInput publicKey */
                 publicKey?: (Uint8Array|null);
+
+                /** SigningInput txHasher */
+                txHasher?: (TW.Cosmos.Proto.TxHasher|null);
+
+                /** SigningInput signerInfo */
+                signerInfo?: (TW.Cosmos.Proto.ISignerInfo|null);
+
+                /** SigningInput timeoutHeight */
+                timeoutHeight?: (Long|null);
             }
 
             /** Represents a SigningInput. */
@@ -13746,6 +15193,15 @@ export namespace TW {
 
                 /** SigningInput publicKey. */
                 public publicKey: Uint8Array;
+
+                /** SigningInput txHasher. */
+                public txHasher: TW.Cosmos.Proto.TxHasher;
+
+                /** SigningInput signerInfo. */
+                public signerInfo?: (TW.Cosmos.Proto.ISignerInfo|null);
+
+                /** SigningInput timeoutHeight. */
+                public timeoutHeight: Long;
 
                 /**
                  * Creates a new SigningInput instance using the specified properties.
@@ -13799,6 +15255,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -13902,6 +15365,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -14013,6 +15483,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Transaction
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransactionInput. */
@@ -14116,6 +15593,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransactionOutput. */
@@ -14201,6 +15685,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -14298,6 +15789,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -14398,6 +15896,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Asset
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -14531,6 +16036,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -14616,6 +16128,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -14736,6 +16255,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Transaction
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace Transaction {
@@ -14817,6 +16343,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Transfer
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a ERC20Transfer. */
@@ -14896,6 +16429,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for ERC20Transfer
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a ERC20Approve. */
@@ -14975,6 +16515,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for ERC20Approve
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a ERC721Transfer. */
@@ -15060,6 +16607,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for ERC721Transfer
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a ERC1155Transfer. */
@@ -15157,6 +16711,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for ERC1155Transfer
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a ContractGeneric. */
@@ -15236,6 +16797,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for ContractGeneric
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a Batch. */
@@ -15309,6 +16877,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Batch
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 namespace Batch {
@@ -15396,6 +16971,13 @@ export namespace TW {
                          * @returns JSON object
                          */
                         public toJSON(): { [k: string]: any };
+
+                        /**
+                         * Gets the default type url for BatchedCall
+                         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                         * @returns The default type url
+                         */
+                        public static getTypeUrl(typeUrlPrefix?: string): string;
                     }
                 }
             }
@@ -15508,6 +17090,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for UserOperation
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -15641,6 +17230,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -15756,6 +17352,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** MessageType enum. */
@@ -15838,6 +17441,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for MaybeChainId
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a MessageSigningInput. */
@@ -15929,6 +17539,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for MessageSigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a MessageSigningOutput. */
@@ -16014,6 +17631,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for MessageSigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a MessageVerifyingInput. */
@@ -16099,6 +17723,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for MessageVerifyingInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -16189,6 +17820,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for BoolType
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a NumberNType. */
@@ -16262,6 +17900,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for NumberNType
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a StringType. */
@@ -16329,6 +17974,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for StringType
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an AddressType. */
@@ -16396,6 +18048,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for AddressType
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an ArrayType. */
@@ -16469,6 +18128,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ArrayType
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a FixedArrayType. */
@@ -16548,6 +18214,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for FixedArrayType
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ByteArrayType. */
@@ -16615,6 +18288,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ByteArrayType
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ByteArrayFixType. */
@@ -16688,6 +18368,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ByteArrayFixType
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TupleType. */
@@ -16761,6 +18448,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TupleType
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Param. */
@@ -16840,6 +18534,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Param
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ParamType. */
@@ -16970,6 +18671,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ParamType
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a NumberNParam. */
@@ -17049,6 +18757,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for NumberNParam
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an ArrayParam. */
@@ -17128,6 +18843,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ArrayParam
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TupleParam. */
@@ -17201,6 +18923,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TupleParam
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Token. */
@@ -17337,6 +19066,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Token
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ContractCallDecodingInput. */
@@ -17416,6 +19152,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ContractCallDecodingInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ContractCallDecodingOutput. */
@@ -17507,6 +19250,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ContractCallDecodingOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an AbiParams. */
@@ -17580,6 +19330,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for AbiParams
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ParamsDecodingInput. */
@@ -17668,6 +19425,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ParamsDecodingInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ParamsDecodingOutput. */
@@ -17753,6 +19517,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ParamsDecodingOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ValueDecodingInput. */
@@ -17832,6 +19603,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ValueDecodingInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ValueDecodingOutput. */
@@ -17923,6 +19701,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ValueDecodingOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a FunctionEncodingInput. */
@@ -18002,6 +19787,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for FunctionEncodingInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a FunctionEncodingOutput. */
@@ -18093,6 +19885,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for FunctionEncodingOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a FunctionGetTypeInput. */
@@ -18172,6 +19971,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for FunctionGetTypeInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -18253,6 +20059,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for RlpList
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a RlpItem. */
@@ -18365,6 +20178,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for RlpItem
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an EncodingInput. */
@@ -18438,6 +20258,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for EncodingInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an EncodingOutput. */
@@ -18523,6 +20350,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for EncodingOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -18643,6 +20477,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Transfer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -18725,6 +20566,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -18798,6 +20646,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -18939,6 +20794,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -19024,6 +20886,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -19111,6 +20980,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PublicAddress
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a NewFundsContent. */
@@ -19214,6 +21090,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for NewFundsContent
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an Action. */
@@ -19233,6 +21116,15 @@ export namespace TW {
 
                 /** Action newFundsRequestMessage */
                 newFundsRequestMessage?: (TW.FIO.Proto.Action.INewFundsRequest|null);
+
+                /** Action removePubAddressMessage */
+                removePubAddressMessage?: (TW.FIO.Proto.Action.IRemovePubAddress|null);
+
+                /** Action removeAllPubAddressesMessage */
+                removeAllPubAddressesMessage?: (TW.FIO.Proto.Action.IRemoveAllPubAddress|null);
+
+                /** Action addBundledTransactionsMessage */
+                addBundledTransactionsMessage?: (TW.FIO.Proto.Action.IAddBundledTransactions|null);
             }
 
             /** Represents an Action. */
@@ -19259,8 +21151,17 @@ export namespace TW {
                 /** Action newFundsRequestMessage. */
                 public newFundsRequestMessage?: (TW.FIO.Proto.Action.INewFundsRequest|null);
 
+                /** Action removePubAddressMessage. */
+                public removePubAddressMessage?: (TW.FIO.Proto.Action.IRemovePubAddress|null);
+
+                /** Action removeAllPubAddressesMessage. */
+                public removeAllPubAddressesMessage?: (TW.FIO.Proto.Action.IRemoveAllPubAddress|null);
+
+                /** Action addBundledTransactionsMessage. */
+                public addBundledTransactionsMessage?: (TW.FIO.Proto.Action.IAddBundledTransactions|null);
+
                 /** Action messageOneof. */
-                public messageOneof?: ("registerFioAddressMessage"|"addPubAddressMessage"|"transferMessage"|"renewFioAddressMessage"|"newFundsRequestMessage");
+                public messageOneof?: ("registerFioAddressMessage"|"addPubAddressMessage"|"transferMessage"|"renewFioAddressMessage"|"newFundsRequestMessage"|"removePubAddressMessage"|"removeAllPubAddressesMessage"|"addBundledTransactionsMessage");
 
                 /**
                  * Creates a new Action instance using the specified properties.
@@ -19314,6 +21215,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Action
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace Action {
@@ -19401,6 +21309,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for RegisterFioAddress
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an AddPubAddress. */
@@ -19486,6 +21401,191 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for AddPubAddress
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
+                }
+
+                /** Properties of a RemovePubAddress. */
+                interface IRemovePubAddress {
+
+                    /** RemovePubAddress fioAddress */
+                    fioAddress?: (string|null);
+
+                    /** RemovePubAddress publicAddresses */
+                    publicAddresses?: (TW.FIO.Proto.IPublicAddress[]|null);
+
+                    /** RemovePubAddress fee */
+                    fee?: (Long|null);
+                }
+
+                /** Represents a RemovePubAddress. */
+                class RemovePubAddress implements IRemovePubAddress {
+
+                    /**
+                     * Constructs a new RemovePubAddress.
+                     * @param [properties] Properties to set
+                     */
+                    constructor(properties?: TW.FIO.Proto.Action.IRemovePubAddress);
+
+                    /** RemovePubAddress fioAddress. */
+                    public fioAddress: string;
+
+                    /** RemovePubAddress publicAddresses. */
+                    public publicAddresses: TW.FIO.Proto.IPublicAddress[];
+
+                    /** RemovePubAddress fee. */
+                    public fee: Long;
+
+                    /**
+                     * Creates a new RemovePubAddress instance using the specified properties.
+                     * @param [properties] Properties to set
+                     * @returns RemovePubAddress instance
+                     */
+                    public static create(properties?: TW.FIO.Proto.Action.IRemovePubAddress): TW.FIO.Proto.Action.RemovePubAddress;
+
+                    /**
+                     * Encodes the specified RemovePubAddress message. Does not implicitly {@link TW.FIO.Proto.Action.RemovePubAddress.verify|verify} messages.
+                     * @param message RemovePubAddress message or plain object to encode
+                     * @param [writer] Writer to encode to
+                     * @returns Writer
+                     */
+                    public static encode(message: TW.FIO.Proto.Action.IRemovePubAddress, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                    /**
+                     * Decodes a RemovePubAddress message from the specified reader or buffer.
+                     * @param reader Reader or buffer to decode from
+                     * @param [length] Message length if known beforehand
+                     * @returns RemovePubAddress
+                     * @throws {Error} If the payload is not a reader or valid buffer
+                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                     */
+                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.FIO.Proto.Action.RemovePubAddress;
+
+                    /**
+                     * Verifies a RemovePubAddress message.
+                     * @param message Plain object to verify
+                     * @returns `null` if valid, otherwise the reason why it is not
+                     */
+                    public static verify(message: { [k: string]: any }): (string|null);
+
+                    /**
+                     * Creates a RemovePubAddress message from a plain object. Also converts values to their respective internal types.
+                     * @param object Plain object
+                     * @returns RemovePubAddress
+                     */
+                    public static fromObject(object: { [k: string]: any }): TW.FIO.Proto.Action.RemovePubAddress;
+
+                    /**
+                     * Creates a plain object from a RemovePubAddress message. Also converts values to other types if specified.
+                     * @param message RemovePubAddress
+                     * @param [options] Conversion options
+                     * @returns Plain object
+                     */
+                    public static toObject(message: TW.FIO.Proto.Action.RemovePubAddress, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                    /**
+                     * Converts this RemovePubAddress to JSON.
+                     * @returns JSON object
+                     */
+                    public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for RemovePubAddress
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
+                }
+
+                /** Properties of a RemoveAllPubAddress. */
+                interface IRemoveAllPubAddress {
+
+                    /** RemoveAllPubAddress fioAddress */
+                    fioAddress?: (string|null);
+
+                    /** RemoveAllPubAddress fee */
+                    fee?: (Long|null);
+                }
+
+                /** Represents a RemoveAllPubAddress. */
+                class RemoveAllPubAddress implements IRemoveAllPubAddress {
+
+                    /**
+                     * Constructs a new RemoveAllPubAddress.
+                     * @param [properties] Properties to set
+                     */
+                    constructor(properties?: TW.FIO.Proto.Action.IRemoveAllPubAddress);
+
+                    /** RemoveAllPubAddress fioAddress. */
+                    public fioAddress: string;
+
+                    /** RemoveAllPubAddress fee. */
+                    public fee: Long;
+
+                    /**
+                     * Creates a new RemoveAllPubAddress instance using the specified properties.
+                     * @param [properties] Properties to set
+                     * @returns RemoveAllPubAddress instance
+                     */
+                    public static create(properties?: TW.FIO.Proto.Action.IRemoveAllPubAddress): TW.FIO.Proto.Action.RemoveAllPubAddress;
+
+                    /**
+                     * Encodes the specified RemoveAllPubAddress message. Does not implicitly {@link TW.FIO.Proto.Action.RemoveAllPubAddress.verify|verify} messages.
+                     * @param message RemoveAllPubAddress message or plain object to encode
+                     * @param [writer] Writer to encode to
+                     * @returns Writer
+                     */
+                    public static encode(message: TW.FIO.Proto.Action.IRemoveAllPubAddress, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                    /**
+                     * Decodes a RemoveAllPubAddress message from the specified reader or buffer.
+                     * @param reader Reader or buffer to decode from
+                     * @param [length] Message length if known beforehand
+                     * @returns RemoveAllPubAddress
+                     * @throws {Error} If the payload is not a reader or valid buffer
+                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                     */
+                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.FIO.Proto.Action.RemoveAllPubAddress;
+
+                    /**
+                     * Verifies a RemoveAllPubAddress message.
+                     * @param message Plain object to verify
+                     * @returns `null` if valid, otherwise the reason why it is not
+                     */
+                    public static verify(message: { [k: string]: any }): (string|null);
+
+                    /**
+                     * Creates a RemoveAllPubAddress message from a plain object. Also converts values to their respective internal types.
+                     * @param object Plain object
+                     * @returns RemoveAllPubAddress
+                     */
+                    public static fromObject(object: { [k: string]: any }): TW.FIO.Proto.Action.RemoveAllPubAddress;
+
+                    /**
+                     * Creates a plain object from a RemoveAllPubAddress message. Also converts values to other types if specified.
+                     * @param message RemoveAllPubAddress
+                     * @param [options] Conversion options
+                     * @returns Plain object
+                     */
+                    public static toObject(message: TW.FIO.Proto.Action.RemoveAllPubAddress, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                    /**
+                     * Converts this RemoveAllPubAddress to JSON.
+                     * @returns JSON object
+                     */
+                    public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for RemoveAllPubAddress
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a Transfer. */
@@ -19571,6 +21671,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Transfer
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a RenewFioAddress. */
@@ -19656,6 +21763,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for RenewFioAddress
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a NewFundsRequest. */
@@ -19753,6 +21867,105 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for NewFundsRequest
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
+                }
+
+                /** Properties of an AddBundledTransactions. */
+                interface IAddBundledTransactions {
+
+                    /** AddBundledTransactions fioAddress */
+                    fioAddress?: (string|null);
+
+                    /** AddBundledTransactions bundleSets */
+                    bundleSets?: (Long|null);
+
+                    /** AddBundledTransactions fee */
+                    fee?: (Long|null);
+                }
+
+                /** Represents an AddBundledTransactions. */
+                class AddBundledTransactions implements IAddBundledTransactions {
+
+                    /**
+                     * Constructs a new AddBundledTransactions.
+                     * @param [properties] Properties to set
+                     */
+                    constructor(properties?: TW.FIO.Proto.Action.IAddBundledTransactions);
+
+                    /** AddBundledTransactions fioAddress. */
+                    public fioAddress: string;
+
+                    /** AddBundledTransactions bundleSets. */
+                    public bundleSets: Long;
+
+                    /** AddBundledTransactions fee. */
+                    public fee: Long;
+
+                    /**
+                     * Creates a new AddBundledTransactions instance using the specified properties.
+                     * @param [properties] Properties to set
+                     * @returns AddBundledTransactions instance
+                     */
+                    public static create(properties?: TW.FIO.Proto.Action.IAddBundledTransactions): TW.FIO.Proto.Action.AddBundledTransactions;
+
+                    /**
+                     * Encodes the specified AddBundledTransactions message. Does not implicitly {@link TW.FIO.Proto.Action.AddBundledTransactions.verify|verify} messages.
+                     * @param message AddBundledTransactions message or plain object to encode
+                     * @param [writer] Writer to encode to
+                     * @returns Writer
+                     */
+                    public static encode(message: TW.FIO.Proto.Action.IAddBundledTransactions, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                    /**
+                     * Decodes an AddBundledTransactions message from the specified reader or buffer.
+                     * @param reader Reader or buffer to decode from
+                     * @param [length] Message length if known beforehand
+                     * @returns AddBundledTransactions
+                     * @throws {Error} If the payload is not a reader or valid buffer
+                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                     */
+                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.FIO.Proto.Action.AddBundledTransactions;
+
+                    /**
+                     * Verifies an AddBundledTransactions message.
+                     * @param message Plain object to verify
+                     * @returns `null` if valid, otherwise the reason why it is not
+                     */
+                    public static verify(message: { [k: string]: any }): (string|null);
+
+                    /**
+                     * Creates an AddBundledTransactions message from a plain object. Also converts values to their respective internal types.
+                     * @param object Plain object
+                     * @returns AddBundledTransactions
+                     */
+                    public static fromObject(object: { [k: string]: any }): TW.FIO.Proto.Action.AddBundledTransactions;
+
+                    /**
+                     * Creates a plain object from an AddBundledTransactions message. Also converts values to other types if specified.
+                     * @param message AddBundledTransactions
+                     * @param [options] Conversion options
+                     * @returns Plain object
+                     */
+                    public static toObject(message: TW.FIO.Proto.Action.AddBundledTransactions, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                    /**
+                     * Converts this AddBundledTransactions to JSON.
+                     * @returns JSON object
+                     */
+                    public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for AddBundledTransactions
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
 
@@ -19839,6 +22052,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ChainParams
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -19942,6 +22162,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -19955,6 +22182,9 @@ export namespace TW {
 
                 /** SigningOutput errorMessage */
                 errorMessage?: (string|null);
+
+                /** SigningOutput actionName */
+                actionName?: (string|null);
             }
 
             /** Represents a SigningOutput. */
@@ -19974,6 +22204,9 @@ export namespace TW {
 
                 /** SigningOutput errorMessage. */
                 public errorMessage: string;
+
+                /** SigningOutput actionName. */
+                public actionName: string;
 
                 /**
                  * Creates a new SigningOutput instance using the specified properties.
@@ -20027,6 +22260,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -20114,6 +22354,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Amount
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Fee. */
@@ -20193,6 +22440,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Fee
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** BroadcastMode enum. */
@@ -20281,6 +22535,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Message
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace Message {
@@ -20374,6 +22635,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Send
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a BridgeTransferOut. */
@@ -20465,6 +22733,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for BridgeTransferOut
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
 
@@ -20615,6 +22890,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -20712,6 +22994,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -20814,6 +23103,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -20917,6 +23213,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransactionMessage. */
@@ -21032,6 +23335,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a StakingMessage. */
@@ -21150,6 +23460,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for StakingMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Description. */
@@ -21247,6 +23564,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Description
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Decimal. */
@@ -21326,6 +23650,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Decimal
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a CommissionRate. */
@@ -21411,6 +23742,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CommissionRate
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a DirectiveCreateValidator. */
@@ -21526,6 +23864,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DirectiveCreateValidator
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a DirectiveEditValidator. */
@@ -21647,6 +23992,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DirectiveEditValidator
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a DirectiveDelegate. */
@@ -21732,6 +24084,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DirectiveDelegate
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a DirectiveUndelegate. */
@@ -21817,6 +24176,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DirectiveUndelegate
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a DirectiveCollectRewards. */
@@ -21890,6 +24256,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DirectiveCollectRewards
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -21977,6 +24350,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Timestamp
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransactionID. */
@@ -22068,6 +24448,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionID
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransferMessage. */
@@ -22153,6 +24540,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransferMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransactionBody. */
@@ -22259,6 +24653,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionBody
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -22338,6 +24739,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -22411,6 +24819,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -22534,6 +24949,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -22625,6 +25047,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -22709,6 +25138,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Transaction
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace Transaction {
@@ -22727,6 +25163,9 @@ export namespace TW {
 
                     /** Transfer currentTimestampNanos */
                     currentTimestampNanos?: (Long|null);
+
+                    /** Transfer permittedDrift */
+                    permittedDrift?: (Long|null);
                 }
 
                 /** Represents a Transfer. */
@@ -22749,6 +25188,9 @@ export namespace TW {
 
                     /** Transfer currentTimestampNanos. */
                     public currentTimestampNanos: Long;
+
+                    /** Transfer permittedDrift. */
+                    public permittedDrift: Long;
 
                     /**
                      * Creates a new Transfer instance using the specified properties.
@@ -22802,6 +25244,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Transfer
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
 
@@ -22882,6 +25331,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -22967,6 +25423,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -23060,6 +25523,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Action
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an AmountLimit. */
@@ -23139,6 +25609,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for AmountLimit
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Algorithm enum. */
@@ -23231,6 +25708,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Signature
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Transaction. */
@@ -23370,6 +25854,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Transaction
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an AccountInfo. */
@@ -23455,6 +25946,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for AccountInfo
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -23552,6 +26050,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -23643,6 +26148,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -23736,6 +26248,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Transfer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Staking. */
@@ -23860,6 +26379,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Staking
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace Staking {
@@ -23959,6 +26485,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Create
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a Reclaim. */
@@ -24038,6 +26571,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Reclaim
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an AddDeposit. */
@@ -24123,6 +26663,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for AddDeposit
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a Restake. */
@@ -24214,6 +26761,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Restake
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a ChangeCandidate. */
@@ -24299,6 +26853,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for ChangeCandidate
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a TransferOwnership. */
@@ -24384,6 +26945,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for TransferOwnership
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a CandidateBasicInfo. */
@@ -24469,6 +27037,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for CandidateBasicInfo
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a CandidateRegister. */
@@ -24572,6 +27147,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for CandidateRegister
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
 
@@ -24658,6 +27240,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ContractCall
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -24830,6 +27419,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -24921,6 +27517,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an ActionCore. */
@@ -25087,6 +27690,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ActionCore
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an Action. */
@@ -25172,6 +27782,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Action
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -25295,6 +27912,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Status
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an Asset. */
@@ -25386,6 +28010,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Asset
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Stake. */
@@ -25465,6 +28096,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Stake
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an Unstake. */
@@ -25556,6 +28194,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Unstake
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Withdraw. */
@@ -25641,6 +28286,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Withdraw
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an Input. */
@@ -25747,6 +28399,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Input
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an Output. */
@@ -25841,6 +28500,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Output
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -25946,6 +28612,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for GenericAction
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a EGLDTransfer. */
@@ -26037,6 +28710,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for EGLDTransfer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ESDTTransfer. */
@@ -26128,6 +28808,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ESDTTransfer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ESDTNFTTransfer. */
@@ -26225,6 +28912,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ESDTNFTTransfer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an Accounts. */
@@ -26328,6 +29022,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Accounts
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -26446,6 +29147,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -26537,6 +29245,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -26663,6 +29378,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -26760,6 +29482,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -26847,6 +29576,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PublicKey
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a FunctionCallPermission. */
@@ -26932,6 +29668,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for FunctionCallPermission
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a FullAccessPermission. */
@@ -26999,6 +29742,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for FullAccessPermission
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an AccessKey. */
@@ -27087,6 +29837,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for AccessKey
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a CreateAccount. */
@@ -27154,6 +29911,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CreateAccount
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a DeployContract. */
@@ -27227,6 +29991,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DeployContract
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a FunctionCall. */
@@ -27318,6 +30089,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for FunctionCall
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Transfer. */
@@ -27391,6 +30169,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Transfer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Stake. */
@@ -27470,6 +30255,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Stake
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an AddKey. */
@@ -27549,6 +30341,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for AddKey
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a DeleteKey. */
@@ -27622,6 +30421,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DeleteKey
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a DeleteAccount. */
@@ -27695,6 +30501,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DeleteAccount
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TokenTransfer. */
@@ -27786,6 +30599,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TokenTransfer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an Action. */
@@ -27910,6 +30730,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Action
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -28019,6 +30846,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -28110,6 +30944,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -28245,6 +31086,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -28330,6 +31178,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Data. */
@@ -28409,6 +31264,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Data
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a RawTransaction. */
@@ -28548,6 +31410,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for RawTransaction
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -28647,6 +31516,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an OutputAddress. */
@@ -28726,6 +31602,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OutputAddress
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransactionOutput. */
@@ -28823,6 +31706,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Transaction. */
@@ -28905,6 +31795,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Transaction
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace Transaction {
@@ -29004,6 +31901,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Nep5Transfer
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an InvocationGeneric. */
@@ -29083,6 +31987,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for InvocationGeneric
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
 
@@ -29199,6 +32110,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -29284,6 +32202,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransactionOutputPlan. */
@@ -29393,6 +32318,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionOutputPlan
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransactionAttributePlan. */
@@ -29472,6 +32404,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionAttributePlan
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransactionPlan. */
@@ -29569,6 +32508,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionPlan
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -29680,6 +32626,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionPlan
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a CellDep. */
@@ -29759,6 +32712,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CellDep
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an OutPoint. */
@@ -29838,6 +32798,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OutPoint
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a CellOutput. */
@@ -29923,6 +32890,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CellOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Script. */
@@ -30008,6 +32982,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Script
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a NativeTransfer. */
@@ -30099,6 +33080,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for NativeTransfer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SudtTransfer. */
@@ -30196,6 +33184,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SudtTransfer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a DaoDeposit. */
@@ -30281,6 +33276,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DaoDeposit
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a DaoWithdrawPhase1. */
@@ -30360,6 +33362,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DaoWithdrawPhase1
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a DaoWithdrawPhase2. */
@@ -30445,6 +33454,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DaoWithdrawPhase2
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -30569,6 +33585,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Cell. */
@@ -30696,6 +33719,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Cell
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -30781,6 +33811,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -30886,6 +33923,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -30959,6 +34003,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -31070,6 +34121,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionCoinFrom
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransactionCoinTo. */
@@ -31167,6 +34225,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionCoinTo
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Signature. */
@@ -31258,6 +34323,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Signature
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Transaction. */
@@ -31373,6 +34445,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Transaction
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -31524,6 +34603,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -31609,6 +34695,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -31720,6 +34813,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransferMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an EscrowMessage. */
@@ -31823,6 +34923,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for EscrowMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a ReclaimEscrowMessage. */
@@ -31926,6 +35033,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ReclaimEscrowMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -32020,6 +35134,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -32105,6 +35226,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -32252,6 +35380,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -32337,6 +35472,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -32431,6 +35573,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Era
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a CustomCallIndices. */
@@ -32510,6 +35659,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CustomCallIndices
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a CallIndices. */
@@ -32586,6 +35742,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CallIndices
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Balance. */
@@ -32680,6 +35843,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Balance
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace Balance {
@@ -32773,6 +35943,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Transfer
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a BatchTransfer. */
@@ -32852,6 +36029,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for BatchTransfer
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an AssetTransfer. */
@@ -32949,6 +36133,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for AssetTransfer
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a BatchAssetTransfer. */
@@ -33034,6 +36225,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for BatchAssetTransfer
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
 
@@ -33159,6 +36357,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Staking
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace Staking {
@@ -33252,6 +36457,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Bond
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a BondAndNominate. */
@@ -33349,6 +36561,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for BondAndNominate
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a BondExtra. */
@@ -33428,6 +36647,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for BondExtra
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an Unbond. */
@@ -33507,6 +36733,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Unbond
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a Rebond. */
@@ -33586,6 +36819,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Rebond
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a WithdrawUnbonded. */
@@ -33665,6 +36905,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for WithdrawUnbonded
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a Nominate. */
@@ -33744,6 +36991,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Nominate
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a ChillAndUnbond. */
@@ -33823,6 +37077,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for ChillAndUnbond
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a Chill. */
@@ -33896,6 +37157,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Chill
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
 
@@ -33979,6 +37247,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Identity
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace Identity {
@@ -34060,6 +37335,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for JoinIdentityAsKey
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of an AddAuthorization. */
@@ -34151,6 +37433,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for AddAuthorization
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 namespace AddAuthorization {
@@ -34226,6 +37515,13 @@ export namespace TW {
                          * @returns JSON object
                          */
                         public toJSON(): { [k: string]: any };
+
+                        /**
+                         * Gets the default type url for Data
+                         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                         * @returns The default type url
+                         */
+                        public static getTypeUrl(typeUrlPrefix?: string): string;
                     }
 
                     /** Properties of an AuthData. */
@@ -34311,6 +37607,13 @@ export namespace TW {
                          * @returns JSON object
                          */
                         public toJSON(): { [k: string]: any };
+
+                        /**
+                         * Gets the default type url for AuthData
+                         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                         * @returns The default type url
+                         */
+                        public static getTypeUrl(typeUrlPrefix?: string): string;
                     }
                 }
             }
@@ -34389,6 +37692,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PolymeshCall
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -34537,6 +37847,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -34622,6 +37939,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -34715,6 +38039,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CurrencyAmount
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an OperationTrustSet. */
@@ -34788,6 +38119,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OperationTrustSet
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an OperationPayment. */
@@ -34882,6 +38220,307 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OperationPayment
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** Properties of an OperationEscrowCreate. */
+            interface IOperationEscrowCreate {
+
+                /** OperationEscrowCreate amount */
+                amount?: (Long|null);
+
+                /** OperationEscrowCreate destination */
+                destination?: (string|null);
+
+                /** OperationEscrowCreate destinationTag */
+                destinationTag?: (Long|null);
+
+                /** OperationEscrowCreate cancelAfter */
+                cancelAfter?: (Long|null);
+
+                /** OperationEscrowCreate finishAfter */
+                finishAfter?: (Long|null);
+
+                /** OperationEscrowCreate condition */
+                condition?: (string|null);
+            }
+
+            /** Represents an OperationEscrowCreate. */
+            class OperationEscrowCreate implements IOperationEscrowCreate {
+
+                /**
+                 * Constructs a new OperationEscrowCreate.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Ripple.Proto.IOperationEscrowCreate);
+
+                /** OperationEscrowCreate amount. */
+                public amount: Long;
+
+                /** OperationEscrowCreate destination. */
+                public destination: string;
+
+                /** OperationEscrowCreate destinationTag. */
+                public destinationTag: Long;
+
+                /** OperationEscrowCreate cancelAfter. */
+                public cancelAfter: Long;
+
+                /** OperationEscrowCreate finishAfter. */
+                public finishAfter: Long;
+
+                /** OperationEscrowCreate condition. */
+                public condition: string;
+
+                /**
+                 * Creates a new OperationEscrowCreate instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns OperationEscrowCreate instance
+                 */
+                public static create(properties?: TW.Ripple.Proto.IOperationEscrowCreate): TW.Ripple.Proto.OperationEscrowCreate;
+
+                /**
+                 * Encodes the specified OperationEscrowCreate message. Does not implicitly {@link TW.Ripple.Proto.OperationEscrowCreate.verify|verify} messages.
+                 * @param message OperationEscrowCreate message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Ripple.Proto.IOperationEscrowCreate, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes an OperationEscrowCreate message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns OperationEscrowCreate
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Ripple.Proto.OperationEscrowCreate;
+
+                /**
+                 * Verifies an OperationEscrowCreate message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates an OperationEscrowCreate message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns OperationEscrowCreate
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Ripple.Proto.OperationEscrowCreate;
+
+                /**
+                 * Creates a plain object from an OperationEscrowCreate message. Also converts values to other types if specified.
+                 * @param message OperationEscrowCreate
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Ripple.Proto.OperationEscrowCreate, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this OperationEscrowCreate to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OperationEscrowCreate
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** Properties of an OperationEscrowCancel. */
+            interface IOperationEscrowCancel {
+
+                /** OperationEscrowCancel owner */
+                owner?: (string|null);
+
+                /** OperationEscrowCancel offerSequence */
+                offerSequence?: (number|null);
+            }
+
+            /** Represents an OperationEscrowCancel. */
+            class OperationEscrowCancel implements IOperationEscrowCancel {
+
+                /**
+                 * Constructs a new OperationEscrowCancel.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Ripple.Proto.IOperationEscrowCancel);
+
+                /** OperationEscrowCancel owner. */
+                public owner: string;
+
+                /** OperationEscrowCancel offerSequence. */
+                public offerSequence: number;
+
+                /**
+                 * Creates a new OperationEscrowCancel instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns OperationEscrowCancel instance
+                 */
+                public static create(properties?: TW.Ripple.Proto.IOperationEscrowCancel): TW.Ripple.Proto.OperationEscrowCancel;
+
+                /**
+                 * Encodes the specified OperationEscrowCancel message. Does not implicitly {@link TW.Ripple.Proto.OperationEscrowCancel.verify|verify} messages.
+                 * @param message OperationEscrowCancel message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Ripple.Proto.IOperationEscrowCancel, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes an OperationEscrowCancel message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns OperationEscrowCancel
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Ripple.Proto.OperationEscrowCancel;
+
+                /**
+                 * Verifies an OperationEscrowCancel message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates an OperationEscrowCancel message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns OperationEscrowCancel
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Ripple.Proto.OperationEscrowCancel;
+
+                /**
+                 * Creates a plain object from an OperationEscrowCancel message. Also converts values to other types if specified.
+                 * @param message OperationEscrowCancel
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Ripple.Proto.OperationEscrowCancel, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this OperationEscrowCancel to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OperationEscrowCancel
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** Properties of an OperationEscrowFinish. */
+            interface IOperationEscrowFinish {
+
+                /** OperationEscrowFinish owner */
+                owner?: (string|null);
+
+                /** OperationEscrowFinish offerSequence */
+                offerSequence?: (number|null);
+
+                /** OperationEscrowFinish condition */
+                condition?: (string|null);
+
+                /** OperationEscrowFinish fulfillment */
+                fulfillment?: (string|null);
+            }
+
+            /** Represents an OperationEscrowFinish. */
+            class OperationEscrowFinish implements IOperationEscrowFinish {
+
+                /**
+                 * Constructs a new OperationEscrowFinish.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Ripple.Proto.IOperationEscrowFinish);
+
+                /** OperationEscrowFinish owner. */
+                public owner: string;
+
+                /** OperationEscrowFinish offerSequence. */
+                public offerSequence: number;
+
+                /** OperationEscrowFinish condition. */
+                public condition: string;
+
+                /** OperationEscrowFinish fulfillment. */
+                public fulfillment: string;
+
+                /**
+                 * Creates a new OperationEscrowFinish instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns OperationEscrowFinish instance
+                 */
+                public static create(properties?: TW.Ripple.Proto.IOperationEscrowFinish): TW.Ripple.Proto.OperationEscrowFinish;
+
+                /**
+                 * Encodes the specified OperationEscrowFinish message. Does not implicitly {@link TW.Ripple.Proto.OperationEscrowFinish.verify|verify} messages.
+                 * @param message OperationEscrowFinish message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Ripple.Proto.IOperationEscrowFinish, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes an OperationEscrowFinish message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns OperationEscrowFinish
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Ripple.Proto.OperationEscrowFinish;
+
+                /**
+                 * Verifies an OperationEscrowFinish message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates an OperationEscrowFinish message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns OperationEscrowFinish
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Ripple.Proto.OperationEscrowFinish;
+
+                /**
+                 * Creates a plain object from an OperationEscrowFinish message. Also converts values to other types if specified.
+                 * @param message OperationEscrowFinish
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Ripple.Proto.OperationEscrowFinish, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this OperationEscrowFinish to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OperationEscrowFinish
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an OperationNFTokenBurn. */
@@ -34955,6 +38594,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OperationNFTokenBurn
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an OperationNFTokenCreateOffer. */
@@ -35034,6 +38680,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OperationNFTokenCreateOffer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an OperationNFTokenAcceptOffer. */
@@ -35107,6 +38760,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OperationNFTokenAcceptOffer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an OperationNFTokenCancelOffer. */
@@ -35180,6 +38840,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OperationNFTokenCancelOffer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -35220,6 +38887,15 @@ export namespace TW {
 
                 /** SigningInput opNftokenCancelOffer */
                 opNftokenCancelOffer?: (TW.Ripple.Proto.IOperationNFTokenCancelOffer|null);
+
+                /** SigningInput opEscrowCreate */
+                opEscrowCreate?: (TW.Ripple.Proto.IOperationEscrowCreate|null);
+
+                /** SigningInput opEscrowCancel */
+                opEscrowCancel?: (TW.Ripple.Proto.IOperationEscrowCancel|null);
+
+                /** SigningInput opEscrowFinish */
+                opEscrowFinish?: (TW.Ripple.Proto.IOperationEscrowFinish|null);
 
                 /** SigningInput publicKey */
                 publicKey?: (Uint8Array|null);
@@ -35270,11 +38946,20 @@ export namespace TW {
                 /** SigningInput opNftokenCancelOffer. */
                 public opNftokenCancelOffer?: (TW.Ripple.Proto.IOperationNFTokenCancelOffer|null);
 
+                /** SigningInput opEscrowCreate. */
+                public opEscrowCreate?: (TW.Ripple.Proto.IOperationEscrowCreate|null);
+
+                /** SigningInput opEscrowCancel. */
+                public opEscrowCancel?: (TW.Ripple.Proto.IOperationEscrowCancel|null);
+
+                /** SigningInput opEscrowFinish. */
+                public opEscrowFinish?: (TW.Ripple.Proto.IOperationEscrowFinish|null);
+
                 /** SigningInput publicKey. */
                 public publicKey: Uint8Array;
 
                 /** SigningInput operationOneof. */
-                public operationOneof?: ("opTrustSet"|"opPayment"|"opNftokenBurn"|"opNftokenCreateOffer"|"opNftokenAcceptOffer"|"opNftokenCancelOffer");
+                public operationOneof?: ("opTrustSet"|"opPayment"|"opNftokenBurn"|"opNftokenCreateOffer"|"opNftokenAcceptOffer"|"opNftokenCancelOffer"|"opEscrowCreate"|"opEscrowCancel"|"opEscrowFinish");
 
                 /**
                  * Creates a new SigningInput instance using the specified properties.
@@ -35328,6 +39013,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -35413,6 +39105,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -35512,6 +39211,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Transfer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a DelegateStake. */
@@ -35597,6 +39303,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DelegateStake
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a DeactivateStake. */
@@ -35670,6 +39383,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DeactivateStake
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a DeactivateAllStake. */
@@ -35743,6 +39463,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DeactivateAllStake
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a WithdrawStake. */
@@ -35822,6 +39549,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for WithdrawStake
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a StakeAccountValue. */
@@ -35901,6 +39635,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for StakeAccountValue
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a WithdrawAllStake. */
@@ -35974,6 +39715,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for WithdrawAllStake
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a CreateTokenAccount. */
@@ -36059,6 +39807,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CreateTokenAccount
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TokenTransfer. */
@@ -36168,6 +39923,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TokenTransfer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a CreateAndTransferToken. */
@@ -36283,6 +40045,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CreateAndTransferToken
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a CreateNonceAccount. */
@@ -36368,6 +40137,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CreateNonceAccount
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a WithdrawNonceAccount. */
@@ -36453,6 +40229,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for WithdrawNonceAccount
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an AdvanceNonceAccount. */
@@ -36526,6 +40309,933 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for AdvanceNonceAccount
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** Properties of a PubkeySignature. */
+            interface IPubkeySignature {
+
+                /** PubkeySignature pubkey */
+                pubkey?: (string|null);
+
+                /** PubkeySignature signature */
+                signature?: (string|null);
+            }
+
+            /** Represents a PubkeySignature. */
+            class PubkeySignature implements IPubkeySignature {
+
+                /**
+                 * Constructs a new PubkeySignature.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Solana.Proto.IPubkeySignature);
+
+                /** PubkeySignature pubkey. */
+                public pubkey: string;
+
+                /** PubkeySignature signature. */
+                public signature: string;
+
+                /**
+                 * Creates a new PubkeySignature instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns PubkeySignature instance
+                 */
+                public static create(properties?: TW.Solana.Proto.IPubkeySignature): TW.Solana.Proto.PubkeySignature;
+
+                /**
+                 * Encodes the specified PubkeySignature message. Does not implicitly {@link TW.Solana.Proto.PubkeySignature.verify|verify} messages.
+                 * @param message PubkeySignature message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Solana.Proto.IPubkeySignature, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a PubkeySignature message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns PubkeySignature
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Solana.Proto.PubkeySignature;
+
+                /**
+                 * Verifies a PubkeySignature message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a PubkeySignature message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns PubkeySignature
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Solana.Proto.PubkeySignature;
+
+                /**
+                 * Creates a plain object from a PubkeySignature message. Also converts values to other types if specified.
+                 * @param message PubkeySignature
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Solana.Proto.PubkeySignature, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this PubkeySignature to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PubkeySignature
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** Properties of a RawMessage. */
+            interface IRawMessage {
+
+                /** RawMessage signatures */
+                signatures?: (TW.Solana.Proto.IPubkeySignature[]|null);
+
+                /** RawMessage legacy */
+                legacy?: (TW.Solana.Proto.RawMessage.IMessageLegacy|null);
+
+                /** RawMessage v0 */
+                v0?: (TW.Solana.Proto.RawMessage.IMessageV0|null);
+            }
+
+            /** Represents a RawMessage. */
+            class RawMessage implements IRawMessage {
+
+                /**
+                 * Constructs a new RawMessage.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Solana.Proto.IRawMessage);
+
+                /** RawMessage signatures. */
+                public signatures: TW.Solana.Proto.IPubkeySignature[];
+
+                /** RawMessage legacy. */
+                public legacy?: (TW.Solana.Proto.RawMessage.IMessageLegacy|null);
+
+                /** RawMessage v0. */
+                public v0?: (TW.Solana.Proto.RawMessage.IMessageV0|null);
+
+                /** RawMessage message. */
+                public message?: ("legacy"|"v0");
+
+                /**
+                 * Creates a new RawMessage instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns RawMessage instance
+                 */
+                public static create(properties?: TW.Solana.Proto.IRawMessage): TW.Solana.Proto.RawMessage;
+
+                /**
+                 * Encodes the specified RawMessage message. Does not implicitly {@link TW.Solana.Proto.RawMessage.verify|verify} messages.
+                 * @param message RawMessage message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Solana.Proto.IRawMessage, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a RawMessage message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns RawMessage
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Solana.Proto.RawMessage;
+
+                /**
+                 * Verifies a RawMessage message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a RawMessage message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns RawMessage
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Solana.Proto.RawMessage;
+
+                /**
+                 * Creates a plain object from a RawMessage message. Also converts values to other types if specified.
+                 * @param message RawMessage
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Solana.Proto.RawMessage, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this RawMessage to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for RawMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            namespace RawMessage {
+
+                /** Properties of a MessageHeader. */
+                interface IMessageHeader {
+
+                    /** MessageHeader numRequiredSignatures */
+                    numRequiredSignatures?: (number|null);
+
+                    /** MessageHeader numReadonlySignedAccounts */
+                    numReadonlySignedAccounts?: (number|null);
+
+                    /** MessageHeader numReadonlyUnsignedAccounts */
+                    numReadonlyUnsignedAccounts?: (number|null);
+                }
+
+                /** Represents a MessageHeader. */
+                class MessageHeader implements IMessageHeader {
+
+                    /**
+                     * Constructs a new MessageHeader.
+                     * @param [properties] Properties to set
+                     */
+                    constructor(properties?: TW.Solana.Proto.RawMessage.IMessageHeader);
+
+                    /** MessageHeader numRequiredSignatures. */
+                    public numRequiredSignatures: number;
+
+                    /** MessageHeader numReadonlySignedAccounts. */
+                    public numReadonlySignedAccounts: number;
+
+                    /** MessageHeader numReadonlyUnsignedAccounts. */
+                    public numReadonlyUnsignedAccounts: number;
+
+                    /**
+                     * Creates a new MessageHeader instance using the specified properties.
+                     * @param [properties] Properties to set
+                     * @returns MessageHeader instance
+                     */
+                    public static create(properties?: TW.Solana.Proto.RawMessage.IMessageHeader): TW.Solana.Proto.RawMessage.MessageHeader;
+
+                    /**
+                     * Encodes the specified MessageHeader message. Does not implicitly {@link TW.Solana.Proto.RawMessage.MessageHeader.verify|verify} messages.
+                     * @param message MessageHeader message or plain object to encode
+                     * @param [writer] Writer to encode to
+                     * @returns Writer
+                     */
+                    public static encode(message: TW.Solana.Proto.RawMessage.IMessageHeader, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                    /**
+                     * Decodes a MessageHeader message from the specified reader or buffer.
+                     * @param reader Reader or buffer to decode from
+                     * @param [length] Message length if known beforehand
+                     * @returns MessageHeader
+                     * @throws {Error} If the payload is not a reader or valid buffer
+                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                     */
+                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Solana.Proto.RawMessage.MessageHeader;
+
+                    /**
+                     * Verifies a MessageHeader message.
+                     * @param message Plain object to verify
+                     * @returns `null` if valid, otherwise the reason why it is not
+                     */
+                    public static verify(message: { [k: string]: any }): (string|null);
+
+                    /**
+                     * Creates a MessageHeader message from a plain object. Also converts values to their respective internal types.
+                     * @param object Plain object
+                     * @returns MessageHeader
+                     */
+                    public static fromObject(object: { [k: string]: any }): TW.Solana.Proto.RawMessage.MessageHeader;
+
+                    /**
+                     * Creates a plain object from a MessageHeader message. Also converts values to other types if specified.
+                     * @param message MessageHeader
+                     * @param [options] Conversion options
+                     * @returns Plain object
+                     */
+                    public static toObject(message: TW.Solana.Proto.RawMessage.MessageHeader, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                    /**
+                     * Converts this MessageHeader to JSON.
+                     * @returns JSON object
+                     */
+                    public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for MessageHeader
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
+                }
+
+                /** Properties of an Instruction. */
+                interface IInstruction {
+
+                    /** Instruction programId */
+                    programId?: (number|null);
+
+                    /** Instruction accounts */
+                    accounts?: (number[]|null);
+
+                    /** Instruction programData */
+                    programData?: (Uint8Array|null);
+                }
+
+                /** Represents an Instruction. */
+                class Instruction implements IInstruction {
+
+                    /**
+                     * Constructs a new Instruction.
+                     * @param [properties] Properties to set
+                     */
+                    constructor(properties?: TW.Solana.Proto.RawMessage.IInstruction);
+
+                    /** Instruction programId. */
+                    public programId: number;
+
+                    /** Instruction accounts. */
+                    public accounts: number[];
+
+                    /** Instruction programData. */
+                    public programData: Uint8Array;
+
+                    /**
+                     * Creates a new Instruction instance using the specified properties.
+                     * @param [properties] Properties to set
+                     * @returns Instruction instance
+                     */
+                    public static create(properties?: TW.Solana.Proto.RawMessage.IInstruction): TW.Solana.Proto.RawMessage.Instruction;
+
+                    /**
+                     * Encodes the specified Instruction message. Does not implicitly {@link TW.Solana.Proto.RawMessage.Instruction.verify|verify} messages.
+                     * @param message Instruction message or plain object to encode
+                     * @param [writer] Writer to encode to
+                     * @returns Writer
+                     */
+                    public static encode(message: TW.Solana.Proto.RawMessage.IInstruction, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                    /**
+                     * Decodes an Instruction message from the specified reader or buffer.
+                     * @param reader Reader or buffer to decode from
+                     * @param [length] Message length if known beforehand
+                     * @returns Instruction
+                     * @throws {Error} If the payload is not a reader or valid buffer
+                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                     */
+                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Solana.Proto.RawMessage.Instruction;
+
+                    /**
+                     * Verifies an Instruction message.
+                     * @param message Plain object to verify
+                     * @returns `null` if valid, otherwise the reason why it is not
+                     */
+                    public static verify(message: { [k: string]: any }): (string|null);
+
+                    /**
+                     * Creates an Instruction message from a plain object. Also converts values to their respective internal types.
+                     * @param object Plain object
+                     * @returns Instruction
+                     */
+                    public static fromObject(object: { [k: string]: any }): TW.Solana.Proto.RawMessage.Instruction;
+
+                    /**
+                     * Creates a plain object from an Instruction message. Also converts values to other types if specified.
+                     * @param message Instruction
+                     * @param [options] Conversion options
+                     * @returns Plain object
+                     */
+                    public static toObject(message: TW.Solana.Proto.RawMessage.Instruction, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                    /**
+                     * Converts this Instruction to JSON.
+                     * @returns JSON object
+                     */
+                    public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Instruction
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
+                }
+
+                /** Properties of a MessageAddressTableLookup. */
+                interface IMessageAddressTableLookup {
+
+                    /** MessageAddressTableLookup accountKey */
+                    accountKey?: (string|null);
+
+                    /** MessageAddressTableLookup writableIndexes */
+                    writableIndexes?: (number[]|null);
+
+                    /** MessageAddressTableLookup readonlyIndexes */
+                    readonlyIndexes?: (number[]|null);
+                }
+
+                /** Represents a MessageAddressTableLookup. */
+                class MessageAddressTableLookup implements IMessageAddressTableLookup {
+
+                    /**
+                     * Constructs a new MessageAddressTableLookup.
+                     * @param [properties] Properties to set
+                     */
+                    constructor(properties?: TW.Solana.Proto.RawMessage.IMessageAddressTableLookup);
+
+                    /** MessageAddressTableLookup accountKey. */
+                    public accountKey: string;
+
+                    /** MessageAddressTableLookup writableIndexes. */
+                    public writableIndexes: number[];
+
+                    /** MessageAddressTableLookup readonlyIndexes. */
+                    public readonlyIndexes: number[];
+
+                    /**
+                     * Creates a new MessageAddressTableLookup instance using the specified properties.
+                     * @param [properties] Properties to set
+                     * @returns MessageAddressTableLookup instance
+                     */
+                    public static create(properties?: TW.Solana.Proto.RawMessage.IMessageAddressTableLookup): TW.Solana.Proto.RawMessage.MessageAddressTableLookup;
+
+                    /**
+                     * Encodes the specified MessageAddressTableLookup message. Does not implicitly {@link TW.Solana.Proto.RawMessage.MessageAddressTableLookup.verify|verify} messages.
+                     * @param message MessageAddressTableLookup message or plain object to encode
+                     * @param [writer] Writer to encode to
+                     * @returns Writer
+                     */
+                    public static encode(message: TW.Solana.Proto.RawMessage.IMessageAddressTableLookup, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                    /**
+                     * Decodes a MessageAddressTableLookup message from the specified reader or buffer.
+                     * @param reader Reader or buffer to decode from
+                     * @param [length] Message length if known beforehand
+                     * @returns MessageAddressTableLookup
+                     * @throws {Error} If the payload is not a reader or valid buffer
+                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                     */
+                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Solana.Proto.RawMessage.MessageAddressTableLookup;
+
+                    /**
+                     * Verifies a MessageAddressTableLookup message.
+                     * @param message Plain object to verify
+                     * @returns `null` if valid, otherwise the reason why it is not
+                     */
+                    public static verify(message: { [k: string]: any }): (string|null);
+
+                    /**
+                     * Creates a MessageAddressTableLookup message from a plain object. Also converts values to their respective internal types.
+                     * @param object Plain object
+                     * @returns MessageAddressTableLookup
+                     */
+                    public static fromObject(object: { [k: string]: any }): TW.Solana.Proto.RawMessage.MessageAddressTableLookup;
+
+                    /**
+                     * Creates a plain object from a MessageAddressTableLookup message. Also converts values to other types if specified.
+                     * @param message MessageAddressTableLookup
+                     * @param [options] Conversion options
+                     * @returns Plain object
+                     */
+                    public static toObject(message: TW.Solana.Proto.RawMessage.MessageAddressTableLookup, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                    /**
+                     * Converts this MessageAddressTableLookup to JSON.
+                     * @returns JSON object
+                     */
+                    public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for MessageAddressTableLookup
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
+                }
+
+                /** Properties of a MessageLegacy. */
+                interface IMessageLegacy {
+
+                    /** MessageLegacy header */
+                    header?: (TW.Solana.Proto.RawMessage.IMessageHeader|null);
+
+                    /** MessageLegacy accountKeys */
+                    accountKeys?: (string[]|null);
+
+                    /** MessageLegacy recentBlockhash */
+                    recentBlockhash?: (string|null);
+
+                    /** MessageLegacy instructions */
+                    instructions?: (TW.Solana.Proto.RawMessage.IInstruction[]|null);
+                }
+
+                /** Represents a MessageLegacy. */
+                class MessageLegacy implements IMessageLegacy {
+
+                    /**
+                     * Constructs a new MessageLegacy.
+                     * @param [properties] Properties to set
+                     */
+                    constructor(properties?: TW.Solana.Proto.RawMessage.IMessageLegacy);
+
+                    /** MessageLegacy header. */
+                    public header?: (TW.Solana.Proto.RawMessage.IMessageHeader|null);
+
+                    /** MessageLegacy accountKeys. */
+                    public accountKeys: string[];
+
+                    /** MessageLegacy recentBlockhash. */
+                    public recentBlockhash: string;
+
+                    /** MessageLegacy instructions. */
+                    public instructions: TW.Solana.Proto.RawMessage.IInstruction[];
+
+                    /**
+                     * Creates a new MessageLegacy instance using the specified properties.
+                     * @param [properties] Properties to set
+                     * @returns MessageLegacy instance
+                     */
+                    public static create(properties?: TW.Solana.Proto.RawMessage.IMessageLegacy): TW.Solana.Proto.RawMessage.MessageLegacy;
+
+                    /**
+                     * Encodes the specified MessageLegacy message. Does not implicitly {@link TW.Solana.Proto.RawMessage.MessageLegacy.verify|verify} messages.
+                     * @param message MessageLegacy message or plain object to encode
+                     * @param [writer] Writer to encode to
+                     * @returns Writer
+                     */
+                    public static encode(message: TW.Solana.Proto.RawMessage.IMessageLegacy, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                    /**
+                     * Decodes a MessageLegacy message from the specified reader or buffer.
+                     * @param reader Reader or buffer to decode from
+                     * @param [length] Message length if known beforehand
+                     * @returns MessageLegacy
+                     * @throws {Error} If the payload is not a reader or valid buffer
+                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                     */
+                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Solana.Proto.RawMessage.MessageLegacy;
+
+                    /**
+                     * Verifies a MessageLegacy message.
+                     * @param message Plain object to verify
+                     * @returns `null` if valid, otherwise the reason why it is not
+                     */
+                    public static verify(message: { [k: string]: any }): (string|null);
+
+                    /**
+                     * Creates a MessageLegacy message from a plain object. Also converts values to their respective internal types.
+                     * @param object Plain object
+                     * @returns MessageLegacy
+                     */
+                    public static fromObject(object: { [k: string]: any }): TW.Solana.Proto.RawMessage.MessageLegacy;
+
+                    /**
+                     * Creates a plain object from a MessageLegacy message. Also converts values to other types if specified.
+                     * @param message MessageLegacy
+                     * @param [options] Conversion options
+                     * @returns Plain object
+                     */
+                    public static toObject(message: TW.Solana.Proto.RawMessage.MessageLegacy, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                    /**
+                     * Converts this MessageLegacy to JSON.
+                     * @returns JSON object
+                     */
+                    public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for MessageLegacy
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
+                }
+
+                /** Properties of a MessageV0. */
+                interface IMessageV0 {
+
+                    /** MessageV0 header */
+                    header?: (TW.Solana.Proto.RawMessage.IMessageHeader|null);
+
+                    /** MessageV0 accountKeys */
+                    accountKeys?: (string[]|null);
+
+                    /** MessageV0 recentBlockhash */
+                    recentBlockhash?: (string|null);
+
+                    /** MessageV0 instructions */
+                    instructions?: (TW.Solana.Proto.RawMessage.IInstruction[]|null);
+
+                    /** MessageV0 addressTableLookups */
+                    addressTableLookups?: (TW.Solana.Proto.RawMessage.IMessageAddressTableLookup[]|null);
+                }
+
+                /** Represents a MessageV0. */
+                class MessageV0 implements IMessageV0 {
+
+                    /**
+                     * Constructs a new MessageV0.
+                     * @param [properties] Properties to set
+                     */
+                    constructor(properties?: TW.Solana.Proto.RawMessage.IMessageV0);
+
+                    /** MessageV0 header. */
+                    public header?: (TW.Solana.Proto.RawMessage.IMessageHeader|null);
+
+                    /** MessageV0 accountKeys. */
+                    public accountKeys: string[];
+
+                    /** MessageV0 recentBlockhash. */
+                    public recentBlockhash: string;
+
+                    /** MessageV0 instructions. */
+                    public instructions: TW.Solana.Proto.RawMessage.IInstruction[];
+
+                    /** MessageV0 addressTableLookups. */
+                    public addressTableLookups: TW.Solana.Proto.RawMessage.IMessageAddressTableLookup[];
+
+                    /**
+                     * Creates a new MessageV0 instance using the specified properties.
+                     * @param [properties] Properties to set
+                     * @returns MessageV0 instance
+                     */
+                    public static create(properties?: TW.Solana.Proto.RawMessage.IMessageV0): TW.Solana.Proto.RawMessage.MessageV0;
+
+                    /**
+                     * Encodes the specified MessageV0 message. Does not implicitly {@link TW.Solana.Proto.RawMessage.MessageV0.verify|verify} messages.
+                     * @param message MessageV0 message or plain object to encode
+                     * @param [writer] Writer to encode to
+                     * @returns Writer
+                     */
+                    public static encode(message: TW.Solana.Proto.RawMessage.IMessageV0, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                    /**
+                     * Decodes a MessageV0 message from the specified reader or buffer.
+                     * @param reader Reader or buffer to decode from
+                     * @param [length] Message length if known beforehand
+                     * @returns MessageV0
+                     * @throws {Error} If the payload is not a reader or valid buffer
+                     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                     */
+                    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Solana.Proto.RawMessage.MessageV0;
+
+                    /**
+                     * Verifies a MessageV0 message.
+                     * @param message Plain object to verify
+                     * @returns `null` if valid, otherwise the reason why it is not
+                     */
+                    public static verify(message: { [k: string]: any }): (string|null);
+
+                    /**
+                     * Creates a MessageV0 message from a plain object. Also converts values to their respective internal types.
+                     * @param object Plain object
+                     * @returns MessageV0
+                     */
+                    public static fromObject(object: { [k: string]: any }): TW.Solana.Proto.RawMessage.MessageV0;
+
+                    /**
+                     * Creates a plain object from a MessageV0 message. Also converts values to other types if specified.
+                     * @param message MessageV0
+                     * @param [options] Conversion options
+                     * @returns Plain object
+                     */
+                    public static toObject(message: TW.Solana.Proto.RawMessage.MessageV0, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                    /**
+                     * Converts this MessageV0 to JSON.
+                     * @returns JSON object
+                     */
+                    public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for MessageV0
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
+                }
+            }
+
+            /** Properties of a DecodingTransactionOutput. */
+            interface IDecodingTransactionOutput {
+
+                /** DecodingTransactionOutput transaction */
+                transaction?: (TW.Solana.Proto.IRawMessage|null);
+
+                /** DecodingTransactionOutput error */
+                error?: (TW.Common.Proto.SigningError|null);
+
+                /** DecodingTransactionOutput errorMessage */
+                errorMessage?: (string|null);
+            }
+
+            /** Represents a DecodingTransactionOutput. */
+            class DecodingTransactionOutput implements IDecodingTransactionOutput {
+
+                /**
+                 * Constructs a new DecodingTransactionOutput.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Solana.Proto.IDecodingTransactionOutput);
+
+                /** DecodingTransactionOutput transaction. */
+                public transaction?: (TW.Solana.Proto.IRawMessage|null);
+
+                /** DecodingTransactionOutput error. */
+                public error: TW.Common.Proto.SigningError;
+
+                /** DecodingTransactionOutput errorMessage. */
+                public errorMessage: string;
+
+                /**
+                 * Creates a new DecodingTransactionOutput instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns DecodingTransactionOutput instance
+                 */
+                public static create(properties?: TW.Solana.Proto.IDecodingTransactionOutput): TW.Solana.Proto.DecodingTransactionOutput;
+
+                /**
+                 * Encodes the specified DecodingTransactionOutput message. Does not implicitly {@link TW.Solana.Proto.DecodingTransactionOutput.verify|verify} messages.
+                 * @param message DecodingTransactionOutput message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Solana.Proto.IDecodingTransactionOutput, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a DecodingTransactionOutput message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns DecodingTransactionOutput
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Solana.Proto.DecodingTransactionOutput;
+
+                /**
+                 * Verifies a DecodingTransactionOutput message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a DecodingTransactionOutput message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns DecodingTransactionOutput
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Solana.Proto.DecodingTransactionOutput;
+
+                /**
+                 * Creates a plain object from a DecodingTransactionOutput message. Also converts values to other types if specified.
+                 * @param message DecodingTransactionOutput
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Solana.Proto.DecodingTransactionOutput, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this DecodingTransactionOutput to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DecodingTransactionOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** Encoding enum. */
+            enum Encoding {
+                Base58 = 0,
+                Base64 = 1
+            }
+
+            /** Properties of a PriorityFeePrice. */
+            interface IPriorityFeePrice {
+
+                /** PriorityFeePrice price */
+                price?: (Long|null);
+            }
+
+            /** Represents a PriorityFeePrice. */
+            class PriorityFeePrice implements IPriorityFeePrice {
+
+                /**
+                 * Constructs a new PriorityFeePrice.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Solana.Proto.IPriorityFeePrice);
+
+                /** PriorityFeePrice price. */
+                public price: Long;
+
+                /**
+                 * Creates a new PriorityFeePrice instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns PriorityFeePrice instance
+                 */
+                public static create(properties?: TW.Solana.Proto.IPriorityFeePrice): TW.Solana.Proto.PriorityFeePrice;
+
+                /**
+                 * Encodes the specified PriorityFeePrice message. Does not implicitly {@link TW.Solana.Proto.PriorityFeePrice.verify|verify} messages.
+                 * @param message PriorityFeePrice message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Solana.Proto.IPriorityFeePrice, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a PriorityFeePrice message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns PriorityFeePrice
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Solana.Proto.PriorityFeePrice;
+
+                /**
+                 * Verifies a PriorityFeePrice message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a PriorityFeePrice message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns PriorityFeePrice
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Solana.Proto.PriorityFeePrice;
+
+                /**
+                 * Creates a plain object from a PriorityFeePrice message. Also converts values to other types if specified.
+                 * @param message PriorityFeePrice
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Solana.Proto.PriorityFeePrice, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this PriorityFeePrice to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PriorityFeePrice
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** Properties of a PriorityFeeLimit. */
+            interface IPriorityFeeLimit {
+
+                /** PriorityFeeLimit limit */
+                limit?: (number|null);
+            }
+
+            /** Represents a PriorityFeeLimit. */
+            class PriorityFeeLimit implements IPriorityFeeLimit {
+
+                /**
+                 * Constructs a new PriorityFeeLimit.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Solana.Proto.IPriorityFeeLimit);
+
+                /** PriorityFeeLimit limit. */
+                public limit: number;
+
+                /**
+                 * Creates a new PriorityFeeLimit instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns PriorityFeeLimit instance
+                 */
+                public static create(properties?: TW.Solana.Proto.IPriorityFeeLimit): TW.Solana.Proto.PriorityFeeLimit;
+
+                /**
+                 * Encodes the specified PriorityFeeLimit message. Does not implicitly {@link TW.Solana.Proto.PriorityFeeLimit.verify|verify} messages.
+                 * @param message PriorityFeeLimit message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Solana.Proto.IPriorityFeeLimit, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a PriorityFeeLimit message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns PriorityFeeLimit
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Solana.Proto.PriorityFeeLimit;
+
+                /**
+                 * Verifies a PriorityFeeLimit message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a PriorityFeeLimit message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns PriorityFeeLimit
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Solana.Proto.PriorityFeeLimit;
+
+                /**
+                 * Creates a plain object from a PriorityFeeLimit message. Also converts values to other types if specified.
+                 * @param message PriorityFeeLimit
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Solana.Proto.PriorityFeeLimit, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this PriorityFeeLimit to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PriorityFeeLimit
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -36587,6 +41297,18 @@ export namespace TW {
 
                 /** SigningInput feePayer */
                 feePayer?: (string|null);
+
+                /** SigningInput rawMessage */
+                rawMessage?: (TW.Solana.Proto.IRawMessage|null);
+
+                /** SigningInput txEncoding */
+                txEncoding?: (TW.Solana.Proto.Encoding|null);
+
+                /** SigningInput priorityFeePrice */
+                priorityFeePrice?: (TW.Solana.Proto.IPriorityFeePrice|null);
+
+                /** SigningInput priorityFeeLimit */
+                priorityFeeLimit?: (TW.Solana.Proto.IPriorityFeeLimit|null);
             }
 
             /** Represents a SigningInput. */
@@ -36655,6 +41377,18 @@ export namespace TW {
                 /** SigningInput feePayer. */
                 public feePayer: string;
 
+                /** SigningInput rawMessage. */
+                public rawMessage?: (TW.Solana.Proto.IRawMessage|null);
+
+                /** SigningInput txEncoding. */
+                public txEncoding: TW.Solana.Proto.Encoding;
+
+                /** SigningInput priorityFeePrice. */
+                public priorityFeePrice?: (TW.Solana.Proto.IPriorityFeePrice|null);
+
+                /** SigningInput priorityFeeLimit. */
+                public priorityFeeLimit?: (TW.Solana.Proto.IPriorityFeeLimit|null);
+
                 /** SigningInput transactionType. */
                 public transactionType?: ("transferTransaction"|"delegateStakeTransaction"|"deactivateStakeTransaction"|"deactivateAllStakeTransaction"|"withdrawTransaction"|"withdrawAllTransaction"|"createTokenAccountTransaction"|"tokenTransferTransaction"|"createAndTransferTokenTransaction"|"createNonceAccount"|"withdrawNonceAccount"|"advanceNonceAccount");
 
@@ -36710,6 +41444,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -36726,6 +41467,9 @@ export namespace TW {
 
                 /** SigningOutput unsignedTx */
                 unsignedTx?: (string|null);
+
+                /** SigningOutput signatures */
+                signatures?: (TW.Solana.Proto.IPubkeySignature[]|null);
             }
 
             /** Represents a SigningOutput. */
@@ -36748,6 +41492,9 @@ export namespace TW {
 
                 /** SigningOutput unsignedTx. */
                 public unsignedTx: string;
+
+                /** SigningOutput signatures. */
+                public signatures: TW.Solana.Proto.IPubkeySignature[];
 
                 /**
                  * Creates a new SigningOutput instance using the specified properties.
@@ -36801,15 +41548,22 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a PreSigningOutput. */
             interface IPreSigningOutput {
 
-                /** Signer list */
+                /** PreSigningOutput signers */
                 signers?: (Uint8Array[]|null);
 
-                /** Pre-image data. There is no hashing for Solana presign image */
+                /** PreSigningOutput data */
                 data?: (Uint8Array|null);
 
                 /** PreSigningOutput error */
@@ -36828,10 +41582,10 @@ export namespace TW {
                  */
                 constructor(properties?: TW.Solana.Proto.IPreSigningOutput);
 
-                /** Signer list */
+                /** PreSigningOutput signers. */
                 public signers: Uint8Array[];
 
-                /** Pre-image data. There is no hashing for Solana presign image */
+                /** PreSigningOutput data. */
                 public data: Uint8Array;
 
                 /** PreSigningOutput error. */
@@ -36892,6 +41646,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PreSigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -36979,6 +41740,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Asset
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an OperationCreateAccount. */
@@ -37058,6 +41826,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OperationCreateAccount
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an OperationPayment. */
@@ -37143,6 +41918,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OperationPayment
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an OperationChangeTrust. */
@@ -37222,6 +42004,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OperationChangeTrust
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** ClaimPredicate enum. */
@@ -37306,6 +42095,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Claimant
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an OperationCreateClaimableBalance. */
@@ -37391,6 +42187,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OperationCreateClaimableBalance
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an OperationClaimClaimableBalance. */
@@ -37464,6 +42267,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OperationClaimClaimableBalance
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a MemoVoid. */
@@ -37531,6 +42341,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for MemoVoid
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a MemoText. */
@@ -37604,6 +42421,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for MemoText
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a MemoId. */
@@ -37677,6 +42501,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for MemoId
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a MemoHash. */
@@ -37750,6 +42581,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for MemoHash
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -37919,6 +42757,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -38004,6 +42849,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -38013,6 +42865,178 @@ export namespace TW {
 
         /** Namespace Proto. */
         namespace Proto {
+
+            /** Properties of an ObjectRef. */
+            interface IObjectRef {
+
+                /** ObjectRef objectId */
+                objectId?: (string|null);
+
+                /** ObjectRef version */
+                version?: (Long|null);
+
+                /** ObjectRef objectDigest */
+                objectDigest?: (string|null);
+            }
+
+            /** Represents an ObjectRef. */
+            class ObjectRef implements IObjectRef {
+
+                /**
+                 * Constructs a new ObjectRef.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Sui.Proto.IObjectRef);
+
+                /** ObjectRef objectId. */
+                public objectId: string;
+
+                /** ObjectRef version. */
+                public version: Long;
+
+                /** ObjectRef objectDigest. */
+                public objectDigest: string;
+
+                /**
+                 * Creates a new ObjectRef instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns ObjectRef instance
+                 */
+                public static create(properties?: TW.Sui.Proto.IObjectRef): TW.Sui.Proto.ObjectRef;
+
+                /**
+                 * Encodes the specified ObjectRef message. Does not implicitly {@link TW.Sui.Proto.ObjectRef.verify|verify} messages.
+                 * @param message ObjectRef message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Sui.Proto.IObjectRef, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes an ObjectRef message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns ObjectRef
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Sui.Proto.ObjectRef;
+
+                /**
+                 * Verifies an ObjectRef message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates an ObjectRef message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns ObjectRef
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Sui.Proto.ObjectRef;
+
+                /**
+                 * Creates a plain object from an ObjectRef message. Also converts values to other types if specified.
+                 * @param message ObjectRef
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Sui.Proto.ObjectRef, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this ObjectRef to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ObjectRef
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** Properties of an Amount. */
+            interface IAmount {
+
+                /** Amount amount */
+                amount?: (Long|null);
+            }
+
+            /** Represents an Amount. */
+            class Amount implements IAmount {
+
+                /**
+                 * Constructs a new Amount.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Sui.Proto.IAmount);
+
+                /** Amount amount. */
+                public amount: Long;
+
+                /**
+                 * Creates a new Amount instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns Amount instance
+                 */
+                public static create(properties?: TW.Sui.Proto.IAmount): TW.Sui.Proto.Amount;
+
+                /**
+                 * Encodes the specified Amount message. Does not implicitly {@link TW.Sui.Proto.Amount.verify|verify} messages.
+                 * @param message Amount message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Sui.Proto.IAmount, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes an Amount message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns Amount
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Sui.Proto.Amount;
+
+                /**
+                 * Verifies an Amount message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates an Amount message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns Amount
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Sui.Proto.Amount;
+
+                /**
+                 * Creates a plain object from an Amount message. Also converts values to other types if specified.
+                 * @param message Amount
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Sui.Proto.Amount, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this Amount to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Amount
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
 
             /** Properties of a SignDirect. */
             interface ISignDirect {
@@ -38085,6 +43109,565 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SignDirect
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** Properties of a Pay. */
+            interface IPay {
+
+                /** Pay inputCoins */
+                inputCoins?: (TW.Sui.Proto.IObjectRef[]|null);
+
+                /** Pay recipients */
+                recipients?: (string[]|null);
+
+                /** Pay amounts */
+                amounts?: (Long[]|null);
+
+                /** Pay gas */
+                gas?: (TW.Sui.Proto.IObjectRef|null);
+            }
+
+            /** Represents a Pay. */
+            class Pay implements IPay {
+
+                /**
+                 * Constructs a new Pay.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Sui.Proto.IPay);
+
+                /** Pay inputCoins. */
+                public inputCoins: TW.Sui.Proto.IObjectRef[];
+
+                /** Pay recipients. */
+                public recipients: string[];
+
+                /** Pay amounts. */
+                public amounts: Long[];
+
+                /** Pay gas. */
+                public gas?: (TW.Sui.Proto.IObjectRef|null);
+
+                /**
+                 * Creates a new Pay instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns Pay instance
+                 */
+                public static create(properties?: TW.Sui.Proto.IPay): TW.Sui.Proto.Pay;
+
+                /**
+                 * Encodes the specified Pay message. Does not implicitly {@link TW.Sui.Proto.Pay.verify|verify} messages.
+                 * @param message Pay message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Sui.Proto.IPay, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a Pay message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns Pay
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Sui.Proto.Pay;
+
+                /**
+                 * Verifies a Pay message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a Pay message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns Pay
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Sui.Proto.Pay;
+
+                /**
+                 * Creates a plain object from a Pay message. Also converts values to other types if specified.
+                 * @param message Pay
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Sui.Proto.Pay, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this Pay to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Pay
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** Properties of a PaySui. */
+            interface IPaySui {
+
+                /** PaySui inputCoins */
+                inputCoins?: (TW.Sui.Proto.IObjectRef[]|null);
+
+                /** PaySui recipients */
+                recipients?: (string[]|null);
+
+                /** PaySui amounts */
+                amounts?: (Long[]|null);
+            }
+
+            /** Represents a PaySui. */
+            class PaySui implements IPaySui {
+
+                /**
+                 * Constructs a new PaySui.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Sui.Proto.IPaySui);
+
+                /** PaySui inputCoins. */
+                public inputCoins: TW.Sui.Proto.IObjectRef[];
+
+                /** PaySui recipients. */
+                public recipients: string[];
+
+                /** PaySui amounts. */
+                public amounts: Long[];
+
+                /**
+                 * Creates a new PaySui instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns PaySui instance
+                 */
+                public static create(properties?: TW.Sui.Proto.IPaySui): TW.Sui.Proto.PaySui;
+
+                /**
+                 * Encodes the specified PaySui message. Does not implicitly {@link TW.Sui.Proto.PaySui.verify|verify} messages.
+                 * @param message PaySui message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Sui.Proto.IPaySui, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a PaySui message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns PaySui
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Sui.Proto.PaySui;
+
+                /**
+                 * Verifies a PaySui message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a PaySui message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns PaySui
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Sui.Proto.PaySui;
+
+                /**
+                 * Creates a plain object from a PaySui message. Also converts values to other types if specified.
+                 * @param message PaySui
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Sui.Proto.PaySui, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this PaySui to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PaySui
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** Properties of a PayAllSui. */
+            interface IPayAllSui {
+
+                /** PayAllSui inputCoins */
+                inputCoins?: (TW.Sui.Proto.IObjectRef[]|null);
+
+                /** PayAllSui recipient */
+                recipient?: (string|null);
+            }
+
+            /** Represents a PayAllSui. */
+            class PayAllSui implements IPayAllSui {
+
+                /**
+                 * Constructs a new PayAllSui.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Sui.Proto.IPayAllSui);
+
+                /** PayAllSui inputCoins. */
+                public inputCoins: TW.Sui.Proto.IObjectRef[];
+
+                /** PayAllSui recipient. */
+                public recipient: string;
+
+                /**
+                 * Creates a new PayAllSui instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns PayAllSui instance
+                 */
+                public static create(properties?: TW.Sui.Proto.IPayAllSui): TW.Sui.Proto.PayAllSui;
+
+                /**
+                 * Encodes the specified PayAllSui message. Does not implicitly {@link TW.Sui.Proto.PayAllSui.verify|verify} messages.
+                 * @param message PayAllSui message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Sui.Proto.IPayAllSui, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a PayAllSui message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns PayAllSui
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Sui.Proto.PayAllSui;
+
+                /**
+                 * Verifies a PayAllSui message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a PayAllSui message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns PayAllSui
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Sui.Proto.PayAllSui;
+
+                /**
+                 * Creates a plain object from a PayAllSui message. Also converts values to other types if specified.
+                 * @param message PayAllSui
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Sui.Proto.PayAllSui, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this PayAllSui to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PayAllSui
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** Properties of a RequestAddStake. */
+            interface IRequestAddStake {
+
+                /** RequestAddStake coins */
+                coins?: (TW.Sui.Proto.IObjectRef[]|null);
+
+                /** RequestAddStake amount */
+                amount?: (TW.Sui.Proto.IAmount|null);
+
+                /** RequestAddStake validator */
+                validator?: (string|null);
+
+                /** RequestAddStake gas */
+                gas?: (TW.Sui.Proto.IObjectRef|null);
+            }
+
+            /** Represents a RequestAddStake. */
+            class RequestAddStake implements IRequestAddStake {
+
+                /**
+                 * Constructs a new RequestAddStake.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Sui.Proto.IRequestAddStake);
+
+                /** RequestAddStake coins. */
+                public coins: TW.Sui.Proto.IObjectRef[];
+
+                /** RequestAddStake amount. */
+                public amount?: (TW.Sui.Proto.IAmount|null);
+
+                /** RequestAddStake validator. */
+                public validator: string;
+
+                /** RequestAddStake gas. */
+                public gas?: (TW.Sui.Proto.IObjectRef|null);
+
+                /**
+                 * Creates a new RequestAddStake instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns RequestAddStake instance
+                 */
+                public static create(properties?: TW.Sui.Proto.IRequestAddStake): TW.Sui.Proto.RequestAddStake;
+
+                /**
+                 * Encodes the specified RequestAddStake message. Does not implicitly {@link TW.Sui.Proto.RequestAddStake.verify|verify} messages.
+                 * @param message RequestAddStake message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Sui.Proto.IRequestAddStake, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a RequestAddStake message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns RequestAddStake
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Sui.Proto.RequestAddStake;
+
+                /**
+                 * Verifies a RequestAddStake message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a RequestAddStake message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns RequestAddStake
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Sui.Proto.RequestAddStake;
+
+                /**
+                 * Creates a plain object from a RequestAddStake message. Also converts values to other types if specified.
+                 * @param message RequestAddStake
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Sui.Proto.RequestAddStake, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this RequestAddStake to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for RequestAddStake
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** Properties of a RequestWithdrawStake. */
+            interface IRequestWithdrawStake {
+
+                /** RequestWithdrawStake stakedSui */
+                stakedSui?: (TW.Sui.Proto.IObjectRef|null);
+
+                /** RequestWithdrawStake gas */
+                gas?: (TW.Sui.Proto.IObjectRef|null);
+            }
+
+            /** Represents a RequestWithdrawStake. */
+            class RequestWithdrawStake implements IRequestWithdrawStake {
+
+                /**
+                 * Constructs a new RequestWithdrawStake.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Sui.Proto.IRequestWithdrawStake);
+
+                /** RequestWithdrawStake stakedSui. */
+                public stakedSui?: (TW.Sui.Proto.IObjectRef|null);
+
+                /** RequestWithdrawStake gas. */
+                public gas?: (TW.Sui.Proto.IObjectRef|null);
+
+                /**
+                 * Creates a new RequestWithdrawStake instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns RequestWithdrawStake instance
+                 */
+                public static create(properties?: TW.Sui.Proto.IRequestWithdrawStake): TW.Sui.Proto.RequestWithdrawStake;
+
+                /**
+                 * Encodes the specified RequestWithdrawStake message. Does not implicitly {@link TW.Sui.Proto.RequestWithdrawStake.verify|verify} messages.
+                 * @param message RequestWithdrawStake message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Sui.Proto.IRequestWithdrawStake, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a RequestWithdrawStake message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns RequestWithdrawStake
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Sui.Proto.RequestWithdrawStake;
+
+                /**
+                 * Verifies a RequestWithdrawStake message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a RequestWithdrawStake message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns RequestWithdrawStake
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Sui.Proto.RequestWithdrawStake;
+
+                /**
+                 * Creates a plain object from a RequestWithdrawStake message. Also converts values to other types if specified.
+                 * @param message RequestWithdrawStake
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Sui.Proto.RequestWithdrawStake, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this RequestWithdrawStake to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for RequestWithdrawStake
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** Properties of a TransferObject. */
+            interface ITransferObject {
+
+                /** TransferObject object */
+                object?: (TW.Sui.Proto.IObjectRef|null);
+
+                /** TransferObject recipient */
+                recipient?: (string|null);
+
+                /** TransferObject gas */
+                gas?: (TW.Sui.Proto.IObjectRef|null);
+            }
+
+            /** https://docs.sui.io/sui-api-ref#unsafe_transferobject */
+            class TransferObject implements ITransferObject {
+
+                /**
+                 * Constructs a new TransferObject.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.Sui.Proto.ITransferObject);
+
+                /** TransferObject object. */
+                public object?: (TW.Sui.Proto.IObjectRef|null);
+
+                /** TransferObject recipient. */
+                public recipient: string;
+
+                /** TransferObject gas. */
+                public gas?: (TW.Sui.Proto.IObjectRef|null);
+
+                /**
+                 * Creates a new TransferObject instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns TransferObject instance
+                 */
+                public static create(properties?: TW.Sui.Proto.ITransferObject): TW.Sui.Proto.TransferObject;
+
+                /**
+                 * Encodes the specified TransferObject message. Does not implicitly {@link TW.Sui.Proto.TransferObject.verify|verify} messages.
+                 * @param message TransferObject message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.Sui.Proto.ITransferObject, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a TransferObject message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns TransferObject
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.Sui.Proto.TransferObject;
+
+                /**
+                 * Verifies a TransferObject message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a TransferObject message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns TransferObject
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.Sui.Proto.TransferObject;
+
+                /**
+                 * Creates a plain object from a TransferObject message. Also converts values to other types if specified.
+                 * @param message TransferObject
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.Sui.Proto.TransferObject, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this TransferObject to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransferObject
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -38093,8 +43676,35 @@ export namespace TW {
                 /** SigningInput privateKey */
                 privateKey?: (Uint8Array|null);
 
+                /** SigningInput signer */
+                signer?: (string|null);
+
                 /** SigningInput signDirectMessage */
                 signDirectMessage?: (TW.Sui.Proto.ISignDirect|null);
+
+                /** SigningInput pay */
+                pay?: (TW.Sui.Proto.IPay|null);
+
+                /** SigningInput paySui */
+                paySui?: (TW.Sui.Proto.IPaySui|null);
+
+                /** SigningInput payAllSui */
+                payAllSui?: (TW.Sui.Proto.IPayAllSui|null);
+
+                /** SigningInput requestAddStake */
+                requestAddStake?: (TW.Sui.Proto.IRequestAddStake|null);
+
+                /** SigningInput requestWithdrawStake */
+                requestWithdrawStake?: (TW.Sui.Proto.IRequestWithdrawStake|null);
+
+                /** SigningInput transferObject */
+                transferObject?: (TW.Sui.Proto.ITransferObject|null);
+
+                /** SigningInput gasBudget */
+                gasBudget?: (Long|null);
+
+                /** SigningInput referenceGasPrice */
+                referenceGasPrice?: (Long|null);
             }
 
             /** Represents a SigningInput. */
@@ -38109,11 +43719,38 @@ export namespace TW {
                 /** SigningInput privateKey. */
                 public privateKey: Uint8Array;
 
+                /** SigningInput signer. */
+                public signer: string;
+
                 /** SigningInput signDirectMessage. */
                 public signDirectMessage?: (TW.Sui.Proto.ISignDirect|null);
 
+                /** SigningInput pay. */
+                public pay?: (TW.Sui.Proto.IPay|null);
+
+                /** SigningInput paySui. */
+                public paySui?: (TW.Sui.Proto.IPaySui|null);
+
+                /** SigningInput payAllSui. */
+                public payAllSui?: (TW.Sui.Proto.IPayAllSui|null);
+
+                /** SigningInput requestAddStake. */
+                public requestAddStake?: (TW.Sui.Proto.IRequestAddStake|null);
+
+                /** SigningInput requestWithdrawStake. */
+                public requestWithdrawStake?: (TW.Sui.Proto.IRequestWithdrawStake|null);
+
+                /** SigningInput transferObject. */
+                public transferObject?: (TW.Sui.Proto.ITransferObject|null);
+
+                /** SigningInput gasBudget. */
+                public gasBudget: Long;
+
+                /** SigningInput referenceGasPrice. */
+                public referenceGasPrice: Long;
+
                 /** SigningInput transactionPayload. */
-                public transactionPayload?: "signDirectMessage";
+                public transactionPayload?: ("signDirectMessage"|"pay"|"paySui"|"payAllSui"|"requestAddStake"|"requestWithdrawStake"|"transferObject");
 
                 /**
                  * Creates a new SigningInput instance using the specified properties.
@@ -38167,6 +43804,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -38258,6 +43902,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -38351,6 +44002,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -38436,6 +44094,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an OperationList. */
@@ -38515,6 +44180,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OperationList
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an Operation. */
@@ -38639,6 +44311,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Operation
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace Operation {
@@ -38741,6 +44420,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for FA12Parameters
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Txs. */
@@ -38826,6 +44512,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Txs
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TxObject. */
@@ -38905,6 +44598,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TxObject
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a FA2Parameters. */
@@ -38984,6 +44684,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for FA2Parameters
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an OperationParameters. */
@@ -39066,6 +44773,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for OperationParameters
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransactionOperationData. */
@@ -39157,6 +44871,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransactionOperationData
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a RevealOperationData. */
@@ -39230,6 +44951,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for RevealOperationData
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a DelegationOperationData. */
@@ -39303,6 +45031,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DelegationOperationData
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -39443,6 +45178,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Transfer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a JettonTransfer. */
@@ -39546,6 +45288,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for JettonTransfer
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -39634,6 +45383,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -39719,6 +45475,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -39738,16 +45501,16 @@ export namespace TW {
                 /** Recipient address */
                 toAddress?: (string|null);
 
-                /** Theta token amount to send in wei (uint256, serialized little endian) */
+                /** Theta token amount to send in wei (uint256, serialized big endian) */
                 thetaAmount?: (Uint8Array|null);
 
-                /** TFuel token amount to send in wei (uint256, serialized little endian) */
+                /** TFuel token amount to send in wei (uint256, serialized big endian) */
                 tfuelAmount?: (Uint8Array|null);
 
                 /** Sequence number of the transaction for the sender address */
                 sequence?: (Long|null);
 
-                /** Fee amount in TFuel wei for the transaction (uint256, serialized little endian) */
+                /** Fee amount in TFuel wei for the transaction (uint256, serialized big endian) */
                 fee?: (Uint8Array|null);
 
                 /** The secret private key used for signing (32 bytes). */
@@ -39772,16 +45535,16 @@ export namespace TW {
                 /** Recipient address */
                 public toAddress: string;
 
-                /** Theta token amount to send in wei (uint256, serialized little endian) */
+                /** Theta token amount to send in wei (uint256, serialized big endian) */
                 public thetaAmount: Uint8Array;
 
-                /** TFuel token amount to send in wei (uint256, serialized little endian) */
+                /** TFuel token amount to send in wei (uint256, serialized big endian) */
                 public tfuelAmount: Uint8Array;
 
                 /** Sequence number of the transaction for the sender address */
                 public sequence: Long;
 
-                /** Fee amount in TFuel wei for the transaction (uint256, serialized little endian) */
+                /** Fee amount in TFuel wei for the transaction (uint256, serialized big endian) */
                 public fee: Uint8Array;
 
                 /** The secret private key used for signing (32 bytes). */
@@ -39842,6 +45605,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -39933,6 +45703,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -40047,6 +45824,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Error
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an Asset. */
@@ -40132,6 +45916,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Asset
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a StreamParams. */
@@ -40211,6 +46002,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for StreamParams
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SwapInput. */
@@ -40356,6 +46154,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SwapInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SwapOutput. */
@@ -40468,6 +46273,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SwapOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -40567,6 +46379,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for PreSigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -40660,6 +46479,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransferContract
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransferAssetContract. */
@@ -40751,6 +46577,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransferAssetContract
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TransferTRC20Contract. */
@@ -40842,6 +46675,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransferTRC20Contract
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a FreezeBalanceContract. */
@@ -40939,6 +46779,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for FreezeBalanceContract
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a FreezeBalanceV2Contract. */
@@ -41024,6 +46871,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for FreezeBalanceV2Contract
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an UnfreezeBalanceV2Contract. */
@@ -41109,6 +46963,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for UnfreezeBalanceV2Contract
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a WithdrawExpireUnfreezeContract. */
@@ -41182,6 +47043,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for WithdrawExpireUnfreezeContract
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a DelegateResourceContract. */
@@ -41279,6 +47147,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for DelegateResourceContract
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an UnDelegateResourceContract. */
@@ -41370,6 +47245,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for UnDelegateResourceContract
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an UnfreezeBalanceContract. */
@@ -41455,6 +47337,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for UnfreezeBalanceContract
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of an UnfreezeAssetContract. */
@@ -41528,6 +47417,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for UnfreezeAssetContract
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a VoteAssetContract. */
@@ -41619,6 +47515,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for VoteAssetContract
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a VoteWitnessContract. */
@@ -41704,6 +47607,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for VoteWitnessContract
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace VoteWitnessContract {
@@ -41785,6 +47695,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Vote
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
 
@@ -41859,6 +47776,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for WithdrawBalanceContract
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a TriggerSmartContract. */
@@ -41962,6 +47886,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TriggerSmartContract
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a BlockHeader. */
@@ -42065,6 +47996,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for BlockHeader
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a Transaction. */
@@ -42249,6 +48187,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Transaction
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -42334,6 +48279,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -42443,6 +48395,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -42459,7 +48418,7 @@ export namespace TW {
                 /** Recipient address. */
                 to?: (string|null);
 
-                /** Transaction amount (uint256, serialized little endian) */
+                /** Transaction amount (uint256, serialized big endian) */
                 value?: (Uint8Array|null);
 
                 /** Payload data. */
@@ -42478,7 +48437,7 @@ export namespace TW {
                 /** Recipient address. */
                 public to: string;
 
-                /** Transaction amount (uint256, serialized little endian) */
+                /** Transaction amount (uint256, serialized big endian) */
                 public value: Uint8Array;
 
                 /** Payload data. */
@@ -42536,6 +48495,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Clause
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -42657,6 +48623,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -42748,6 +48721,226 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+        }
+    }
+
+    /** Namespace WalletConnect. */
+    namespace WalletConnect {
+
+        /** Namespace Proto. */
+        namespace Proto {
+
+            /** Protocol enum. */
+            enum Protocol {
+                V2 = 0
+            }
+
+            /** Method enum. */
+            enum Method {
+                Unknown = 0,
+                CosmosSignAmino = 1,
+                SolanaSignTransaction = 2
+            }
+
+            /** Properties of a ParseRequestInput. */
+            interface IParseRequestInput {
+
+                /** ParseRequestInput protocol */
+                protocol?: (TW.WalletConnect.Proto.Protocol|null);
+
+                /** ParseRequestInput method */
+                method?: (TW.WalletConnect.Proto.Method|null);
+
+                /** ParseRequestInput payload */
+                payload?: (string|null);
+            }
+
+            /** Represents a ParseRequestInput. */
+            class ParseRequestInput implements IParseRequestInput {
+
+                /**
+                 * Constructs a new ParseRequestInput.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.WalletConnect.Proto.IParseRequestInput);
+
+                /** ParseRequestInput protocol. */
+                public protocol: TW.WalletConnect.Proto.Protocol;
+
+                /** ParseRequestInput method. */
+                public method: TW.WalletConnect.Proto.Method;
+
+                /** ParseRequestInput payload. */
+                public payload: string;
+
+                /**
+                 * Creates a new ParseRequestInput instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns ParseRequestInput instance
+                 */
+                public static create(properties?: TW.WalletConnect.Proto.IParseRequestInput): TW.WalletConnect.Proto.ParseRequestInput;
+
+                /**
+                 * Encodes the specified ParseRequestInput message. Does not implicitly {@link TW.WalletConnect.Proto.ParseRequestInput.verify|verify} messages.
+                 * @param message ParseRequestInput message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.WalletConnect.Proto.IParseRequestInput, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a ParseRequestInput message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns ParseRequestInput
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.WalletConnect.Proto.ParseRequestInput;
+
+                /**
+                 * Verifies a ParseRequestInput message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a ParseRequestInput message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns ParseRequestInput
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.WalletConnect.Proto.ParseRequestInput;
+
+                /**
+                 * Creates a plain object from a ParseRequestInput message. Also converts values to other types if specified.
+                 * @param message ParseRequestInput
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.WalletConnect.Proto.ParseRequestInput, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this ParseRequestInput to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ParseRequestInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
+            }
+
+            /** Properties of a ParseRequestOutput. */
+            interface IParseRequestOutput {
+
+                /** ParseRequestOutput error */
+                error?: (TW.Common.Proto.SigningError|null);
+
+                /** ParseRequestOutput errorMessage */
+                errorMessage?: (string|null);
+
+                /** ParseRequestOutput binance */
+                binance?: (TW.Binance.Proto.ISigningInput|null);
+
+                /** ParseRequestOutput solana */
+                solana?: (TW.Solana.Proto.ISigningInput|null);
+            }
+
+            /** Represents a ParseRequestOutput. */
+            class ParseRequestOutput implements IParseRequestOutput {
+
+                /**
+                 * Constructs a new ParseRequestOutput.
+                 * @param [properties] Properties to set
+                 */
+                constructor(properties?: TW.WalletConnect.Proto.IParseRequestOutput);
+
+                /** ParseRequestOutput error. */
+                public error: TW.Common.Proto.SigningError;
+
+                /** ParseRequestOutput errorMessage. */
+                public errorMessage: string;
+
+                /** ParseRequestOutput binance. */
+                public binance?: (TW.Binance.Proto.ISigningInput|null);
+
+                /** ParseRequestOutput solana. */
+                public solana?: (TW.Solana.Proto.ISigningInput|null);
+
+                /** ParseRequestOutput signingInputOneof. */
+                public signingInputOneof?: ("binance"|"solana");
+
+                /**
+                 * Creates a new ParseRequestOutput instance using the specified properties.
+                 * @param [properties] Properties to set
+                 * @returns ParseRequestOutput instance
+                 */
+                public static create(properties?: TW.WalletConnect.Proto.IParseRequestOutput): TW.WalletConnect.Proto.ParseRequestOutput;
+
+                /**
+                 * Encodes the specified ParseRequestOutput message. Does not implicitly {@link TW.WalletConnect.Proto.ParseRequestOutput.verify|verify} messages.
+                 * @param message ParseRequestOutput message or plain object to encode
+                 * @param [writer] Writer to encode to
+                 * @returns Writer
+                 */
+                public static encode(message: TW.WalletConnect.Proto.IParseRequestOutput, writer?: $protobuf.Writer): $protobuf.Writer;
+
+                /**
+                 * Decodes a ParseRequestOutput message from the specified reader or buffer.
+                 * @param reader Reader or buffer to decode from
+                 * @param [length] Message length if known beforehand
+                 * @returns ParseRequestOutput
+                 * @throws {Error} If the payload is not a reader or valid buffer
+                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 */
+                public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TW.WalletConnect.Proto.ParseRequestOutput;
+
+                /**
+                 * Verifies a ParseRequestOutput message.
+                 * @param message Plain object to verify
+                 * @returns `null` if valid, otherwise the reason why it is not
+                 */
+                public static verify(message: { [k: string]: any }): (string|null);
+
+                /**
+                 * Creates a ParseRequestOutput message from a plain object. Also converts values to their respective internal types.
+                 * @param object Plain object
+                 * @returns ParseRequestOutput
+                 */
+                public static fromObject(object: { [k: string]: any }): TW.WalletConnect.Proto.ParseRequestOutput;
+
+                /**
+                 * Creates a plain object from a ParseRequestOutput message. Also converts values to other types if specified.
+                 * @param message ParseRequestOutput
+                 * @param [options] Conversion options
+                 * @returns Plain object
+                 */
+                public static toObject(message: TW.WalletConnect.Proto.ParseRequestOutput, options?: $protobuf.IConversionOptions): { [k: string]: any };
+
+                /**
+                 * Converts this ParseRequestOutput to JSON.
+                 * @returns JSON object
+                 */
+                public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for ParseRequestOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -42859,6 +49052,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for TransferMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a LeaseMessage. */
@@ -42944,6 +49144,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for LeaseMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a CancelLeaseMessage. */
@@ -43023,6 +49230,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for CancelLeaseMessage
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningInput. */
@@ -43123,6 +49337,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -43202,6 +49423,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
@@ -43292,6 +49520,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for Transaction
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             namespace Transaction {
@@ -43367,6 +49602,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Transfer
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
 
                 /** Properties of a Raw. */
@@ -43452,6 +49694,13 @@ export namespace TW {
                      * @returns JSON object
                      */
                     public toJSON(): { [k: string]: any };
+
+                    /**
+                     * Gets the default type url for Raw
+                     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                     * @returns The default type url
+                     */
+                    public static getTypeUrl(typeUrlPrefix?: string): string;
                 }
             }
 
@@ -43562,6 +49811,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningInput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
 
             /** Properties of a SigningOutput. */
@@ -43641,6 +49897,13 @@ export namespace TW {
                  * @returns JSON object
                  */
                 public toJSON(): { [k: string]: any };
+
+                /**
+                 * Gets the default type url for SigningOutput
+                 * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+                 * @returns The default type url
+                 */
+                public static getTypeUrl(typeUrlPrefix?: string): string;
             }
         }
     }
